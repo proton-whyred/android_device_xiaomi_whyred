@@ -221,6 +221,7 @@ PRODUCT_PACKAGES += \
     init.affinity.sh \
     init.device.rc \
     init.class_main.sh \
+    init.goodix.sh \
     init.msm.usb.configfs.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
