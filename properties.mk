@@ -208,7 +208,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.recomputecrop=0 \
     persist.hwc.ptor.enable=true \
     debug.sdm.support_writeback=0 \
-    debug.sf.enable_egl_image_tracker=1
+    debug.sf.enable_egl_image_tracker=1 \
+    vendor.display.disable_rotator_downscale=1 \
+    vendor.display.disable_scaler=0
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
