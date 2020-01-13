@@ -163,6 +163,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 
+# Memory Config
+MALLOC_SVELTE := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
