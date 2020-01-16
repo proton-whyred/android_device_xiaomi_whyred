@@ -99,11 +99,11 @@ PRODUCT_PACKAGES += \
     liba2dpoffload \
     libbthost_if \
     libhdmiedid \
-    libbtconfigstore \
     libhfp \
     libldacBT_dec \
     libsndmonitor \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Broadcastradio
 PRODUCT_PACKAGES += \
