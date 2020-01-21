@@ -527,30 +527,8 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|d0bb854210433066945f9d6e7943d0
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd418979cb56
 
 # Perf - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/energy-awareness|d30082c491a02582ee281fe7fe9e71eba9708858
-vendor/bin/hw/vendor.qti.hardware.perf@2.1-service|2e3be88cad2d9b9aa4edc8e68ad5f4d4e7eeaedc
-vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
-vendor/etc/init/vendor.qti.hardware.perf@2.1-service.rc|0d7eaa2a99b16738f4e40d7ee7473bb0dd705d2c
-vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
-vendor/etc/perf/perfboostsconfig.xml|234c2a1cc1b77870e7479fe9310a24f97553279c
-vendor/etc/perf/targetconfig.xml|3390ca470388a92fdc1b77ff31a34e182f98532c
-vendor/etc/perf/targetresourceconfigs.xml|4f674836df32fd51e2bc09f3b56af7ad1a6021a0
-vendor/etc/perf/perf-profile1.conf|4056b772f2790ffd2f466275be8f03e4a796b55c
-vendor/etc/perf/perf-profile2.conf|341790cfe6d82602ef354b821c5cfdec0dad76e3
-vendor/etc/perf/perf-profile3.conf|eb70ebc87c8a079b0706fa7ac1fb02ff60a7bdc5
-vendor/etc/perf/perf-profile4.conf|530f7ab890fa9ca44e90944deb1a66ef79613c5e
-vendor/etc/perf/perf-profile5.conf|55d67b5afb0cc56e4fe5e9515226be346c9daefc
-vendor/etc/perf/perf-profile6.conf|910a193b8425bbe0080f746d6788e66986b2e762
-vendor/lib/libperfconfig.so|f4ee23ed7fdcdf4729d268d2f30baac97c0c2bf9
-vendor/lib/libperfgluelayer.so|6ab754c780858b668f8b45c7d222a0bf3d9ecda3
 vendor/lib/libqti-perfd-client.so|93b4806dd64f7b9a832d2b1999f6fa6413c56a48
-vendor/lib/libqti-perfd.so|75035d4036104328fb3f6a74dfef01e893cb8291
-vendor/lib/libqti-util.so|b9610a3448b53d007965e1572a0d6c65414052ff
-vendor/lib64/libperfconfig.so|45d5344603d76d4d0b7f27bdd4ea07ac525656de
-vendor/lib64/libperfgluelayer.so|152cf86d26137536b7c20ca99d7efec5d1375324
 vendor/lib64/libqti-perfd-client.so|7089fa216b06fc78127b51df6cade6518886a463
-vendor/lib64/libqti-perfd.so|6c041cd7f3d640b500fb2253ba93a253e12ffd31
-vendor/lib64/libqti-util.so|45a80be449435d277f09cc59e4a315fa86072c41
 
 # Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
