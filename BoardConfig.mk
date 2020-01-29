@@ -36,6 +36,9 @@ AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAS_QCA_FM_SOC := cherokee
 BOARD_HAVE_QCOM_FM := true
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := whyred_defconfig
 
