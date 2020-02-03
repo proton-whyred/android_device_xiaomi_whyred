@@ -83,5 +83,9 @@ PRODUCT_PACKAGES += \
     libcamera_sdm660_shim \
     libMiWatermark_shim
 
+# Watermark
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/MIUI_DualCamera_watermark.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/whyred/whyred-vendor.mk)
