@@ -26,7 +26,7 @@ export DEVICE_COMMON=sdm660-common
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
-DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+AOSiP_ROOT="$MY_DIR"/../../..
+DEVICE_BLOB_ROOT="$AOSiP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 patchelf --add-needed libcamera_sdm660_shim.so "$DEVICE_BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
