@@ -80,8 +80,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim \
-    libMiWatermark_shim
+    libcamera_sdm660_shim
 
 # Watermark
 PRODUCT_COPY_FILES += \
