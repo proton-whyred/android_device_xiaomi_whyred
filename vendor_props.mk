@@ -35,7 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit \
-    persist.vendor.camera.preview.ubwc=0 \
     persist.vendor.camera.stats.test=5 \
     persist.vendor.camera.depth.focus.cb=0 \
     persist.vendor.camera.imglib.usefdlite=1 \
@@ -63,9 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=1 \
-    debug.sf.enable_hwc_vds=1 \
-    debug.sf.hw=1 \
     debug.sf.disable_backpressure= 1 \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
@@ -78,10 +74,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.enable_vds=1 \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0 \
-    vendor.display.disable_skip_validate=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
-    vendor.display.enable_default_color_mode=0 \
     video.disable.ubwc=1 \
     ro.sf.lcd_density=440 \
     ro.surface_flinger.use_color_management=true
@@ -123,30 +116,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0 \
-    media.aac_51_output_enabled=true \
-    media.stagefright.enable-aac=true \
-    media.stagefright.enable-http=true \
-    media.stagefright.enable-player=true \
-    media.stagefright.enable-qcp=true \
-    media.stagefright.enable-scan=true \
-    media.stagefright.thumbnail.prefer_hw_codecs=true \
-    mm.enable.qcom_parser=13631471 \
-    mm.enable.smoothstreaming=true \
-    mmp.enable.3g2=true \
-    persist.mm.enable.prefetch=true \
-    vendor.vidc.dec.enable.downscalar=1 \
-    vendor.vidc.enc.disable.pq=true \
-    vendor.vidc.enc.disable_bframes=1 \
-    vidc.enc.dcvs.extra-buff-count=2 \
-    vidc.enc.target_support_bframe=1
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Netflix custom property
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q660-13149-1
 
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -162,8 +135,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.timed.enable=true \
-    persist.vendor.cne.feature=1 \
     persist.vendor.dpm.feature=1 \
     persist.vendor.dpm.nsrm.bkg.evt=3955 \
     persist.vendor.qcomsysd.enabled=1
@@ -179,26 +150,16 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.aosp_usr_pref_sel=true \
     persist.radio.add_power_save=1 \
-    persist.radio.VT_CAM_INTERFACE=2 \
     persist.radio.data_con_rprt=1 \
     persist.vendor.data.mode=concurrent \
     persist.vendor.qti.telephony.vt_cam_interface=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.procedure_bytes=SKIP \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
-    ro.telephony.default_network=9,9 \
     ro.telephony.iwlan_operation_mode=legacy \
-    ro.vendor.use_data_netmgrd=true
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    DEVICE_PROVISIONED=1 \
-    ril.subscription.types=NV,RUIM \
-    telephony.lteOnCdmaDevice=1
 
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -217,11 +178,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sensors.dev_ori=false \
-    ro.vendor.sensors.facing=false \
-    ro.vendor.sensors.mot_detect=true \
-    ro.vendor.sensors.pmd=true \
-    ro.vendor.sensors.sta_detect=true
+    ro.vendor.sensors.facing=false
 
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -229,11 +186,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.protected_contents=true
-
-# WFD
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
 
 # Doze
 PRODUCT_PROPERTY_OVERRIDES += \
