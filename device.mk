@@ -73,9 +73,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
-# Screen density
-PRODUCT_AAPT_PREF_CONFIG := 400dpi
-
 # Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
