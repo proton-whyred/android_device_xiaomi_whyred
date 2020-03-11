@@ -11,3 +11,4 @@ dontaudit untrusted_app_29 proc_version:file read;
 dontaudit untrusted_app_29 proc:file read;
 dontaudit untrusted_app_29 vendor_persist_camera_prop:file read;
    
+dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;
