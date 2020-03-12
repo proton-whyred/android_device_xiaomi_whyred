@@ -1,9 +1,9 @@
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=8 \
-    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-filter=everything \
     dalvik.vm.dex2oat-threads=8 \
-    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-filter=everything \
     ro.sys.fw.dex2oat_thread_count=8 \
     ro.vendor.qti.am.reschedule_service=true \
     dalvik.vm.heapgrowthlimit=256m
