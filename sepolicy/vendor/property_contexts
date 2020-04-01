@@ -53,3 +53,6 @@ vendor.powerhal.state                   u:object_r:power_prop:s0
 
 # Hall wakeup
 persist.service.folio_daemon        u:object_r:system_prop:s0
+
+# Wifi Prop
+wifi.active.interface               u:object_r:wifi_prop:s0
