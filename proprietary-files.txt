@@ -645,6 +645,7 @@ vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
 
 # Consumerir
+vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.sdm660.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
 
 # Fingerprint firmware
