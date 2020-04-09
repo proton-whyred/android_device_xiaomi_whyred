@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Display
+PRODUCT_PACKAGES += \
+    copybit.sdm660
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
