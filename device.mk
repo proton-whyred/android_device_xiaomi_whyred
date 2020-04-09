@@ -72,7 +72,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.device.rc
 
 # Sensors
