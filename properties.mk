@@ -19,3 +19,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.sf.lcd_density=440
+
+# Dual SIM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds
+
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.iwlan.enable=true \
+    persist.vendor.radio.data_con_rprt=1
