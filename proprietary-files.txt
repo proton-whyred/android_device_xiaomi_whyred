@@ -713,10 +713,6 @@ vendor/lib64/hw/keystore.sdm660.so
 
 # Thermal - from LA.UM.8.2.r1-04000-sdm660.0
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/bin/thermal-engine|5b0deee2f319843c32b41be26ec6648cb6fc8560
 
 # VNDK
 vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
-
-# Wifi
-vendor/bin/cnss-daemon
