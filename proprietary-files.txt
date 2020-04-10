@@ -1,6 +1,15 @@
 # Audio Power Amplifier
 vendor/firmware/tas2557_uCDSP.bin
 
+# Audio - from LA.UM.8.2.r1-05100-sdm660.0
+vendor/lib/libacdb-fts.so|a2f09f2a01c326d6b57b1c0e406c92850ceef439
+vendor/lib/libacdbloader.so|95c29023a9bdfd901e9912b9915c8a866108e473
+vendor/lib/libacdbrtac.so|98a8a9cf331cc10c755c808da3bf4da5d4de0c2a
+vendor/lib/libadiertac.so|9d6c62200d81e28ccd78aef6ce8e223655f102b6
+vendor/lib/libadm.so|88942852ab679506be8a64ab4b66b25a804e8073
+vendor/lib/libaudcal.so|2c7b95a1c0e43f1c7d8d679f472343776f7bf718
+vendor/lib/libqtigef.so|10b64bf536b4edb6c09d047c218cfe4c9a9255f1
+
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
