@@ -32,61 +32,10 @@ on boot
     chmod 0660 /sys/android_camera/sensor
     chown system system /sys/android_camera/sensor
 
-    # Fingerprint
-    chmod 0600 /data/misc/fpc/calibration_image.pndat
-
-    # Flash
-    chmod 0660 /sys/class/leds/led:flash_0/brightness
-    chmod 0660 /sys/class/leds/led:flash_1/brightness
-    chmod 0660 /sys/class/leds/led:flash_2/brightness
-    chmod 0660 /sys/class/leds/led:torch_0/brightness
-    chmod 0660 /sys/class/leds/led:torch_1/brightness
-    chmod 0660 /sys/class/leds/led:torch_2/brightness
-    chmod 0660 /sys/class/leds/led:switch_0/brightness
-    chmod 0660 /sys/class/leds/led:switch_1/brightness
-    chmod 0660 /sys/class/leds/flashlight/brightness
-    chown system system /sys/class/leds/led:flash_0/brightness
-    chown system system /sys/class/leds/led:flash_1/brightness
-    chown system system /sys/class/leds/led:flash_2/brightness
-    chown system system /sys/class/leds/led:torch_0/brightness
-    chown system system /sys/class/leds/led:torch_1/brightness
-    chown system system /sys/class/leds/led:torch_2/brightness
-    chown system system /sys/class/leds/led:switch_0/brightness
-    chown system system /sys/class/leds/led:switch_1/brightness
-    chown system system /sys/class/leds/flashlight/brightness
-
-    # IR
-    chmod 0660 /dev/spidev7.1
-    chown system system /dev/spidev7.1
-
-    # Leds
-    chmod 0640 /sys/class/leds/red/delay_on
-    chmod 0640 /sys/class/leds/red/delay_off
-    chmod 0640 /sys/class/leds/red/breath
-    chown system system /sys/class/leds/red/delay_on
-    chown system system /sys/class/leds/red/delay_off
-    chown system system /sys/class/leds/red/breath
-
-    # Power supply
-    chmod 0660 /sys/class/power_supply/battery/input_suspend
-    chmod 0660 /sys/class/power_supply/battery/charging_enabled
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chown system system /sys/class/power_supply/battery/charging_enabled
-
-    # Thermal
-    chmod 0770 /sys/class/power_supply/battery/device/thermalcall
-    chown system system /sys/class/power_supply/battery/device/thermalcall
-
-    # Enable camera read sensors data
-    setprop persist.camera.gyro.disable 0
-
-on post-fs-data
-    mkdir /persist/qti_fp 0700 system system
-    mkdir /mnt/vendor/persist/fpc 0770 system system	
-    copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db	
-    chown system system /data/vendor_de/0/fpdata/user.db	
-    rm /data/vendor/fpc/user.db
-
-# Workaround for camera HAL can not read sys property
+    # Set permission for double tap to wake support
+    chmod 0660 /proc/tp_gesture
+    chown system system /proc/tp_gesture
+   
+    # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
