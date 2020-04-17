@@ -28,7 +28,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     ro.vendor.bluetooth.wipower=false \
-    vendor.qcom.bluetooth.soc=cherokee
+    vendor.qcom.bluetooth.soc=cherokee \
+    persist.vendor.service.bdroid.sibs=false
 
 # Camera 
 PRODUCT_PROPERTY_OVERRIDES += \
