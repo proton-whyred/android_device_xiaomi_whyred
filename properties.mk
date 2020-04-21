@@ -111,29 +111,35 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.bluetooth.wipower=false \
     vendor.qcom.bluetooth.soc=cherokee
 
-# Camera
+# Camera 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bokeh.switch.lux=290 \
-    persist.vendor.camera.HAL3.enabled=1 \
+    camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit \
+    persist.vendor.camera.preview.ubwc=0 \
+    persist.vendor.camera.stats.test=5 \
     persist.vendor.camera.depth.focus.cb=0 \
-    persist.vendor.camera.exif.make=Xiaomi \
-    persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.imglib.usefdlite=1 \
     persist.vendor.camera.isp.clock.optmz=0 \
-    persist.vendor.camera.isp.turbo=1 \
     persist.vendor.camera.linkpreview=0 \
-    persist.vendor.camera.preview.ubwc=0 \
-    persist.vendor.camera.stats.test=0 \
-    persist.vendor.imx376_ofilm.light.lux=275 \
-    persist.vendor.imx376_ofilm.low.lux=290 \
-    persist.vendor.imx376_sunny.light.lux=275 \
-    persist.vendor.imx376_sunny.low.lux=290 \
-    persist.camera.privapp.list=org.codeaurora.snapcam \
-    persist.vendor.camera.dual.isp.sync=0 \
-    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.isp.turbo=1 \
     persist.vendor.camera.exif.make=Xiaomi \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
-    vendor.camera.aux.packageblacklist=com.google.android.GoogleCamera,com.discord
+    persist.vendor.camera.exif.model=Redmi Note 5 \
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.fdvideo=1 \
+    persist.vendor.camera.awb.sync=2 \
+    persist.vendor.flash.low.lux=390 \
+    persist.vendor.flash.light.lux=340 \
+    persist.vendor.imx376_ofilm.low.lux=310 \
+    persist.vendor.imx376_ofilm.light.lux=280 \
+    persist.vendor.imx376_sunny.low.lux=310 \
+    persist.vendor.imx376_sunny.light.lux=280 \
+    persist.vendor.ov13855_sunny.low.lux=385 \
+    persist.vendor.ov13855_sunny.light.lux=370 \
+    persist.vendor.s5k3l8_ofilm.low.lux=379 \
+    persist.vendor.s5k3l8_ofilm.light.lux=367 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.ltm.overlap=13 \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -179,11 +185,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GMS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase.ms=android-xiaomi-rev2
-
-# HAL1 apps list
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera.hal1.packagelist=com.whatsapp,com.android.camera,com.android.camera2,com.instagram.android \
-    vendor.camera.hal1.packagelist= com.whatsapp,com.android.camera,com.android.camera2,com.instagram.android
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
