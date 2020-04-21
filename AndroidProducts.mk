@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_whyred.mk
+    $(LOCAL_DIR)/pa_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_whyred-user \
-    aosp_whyred-userdebug \
-    aosp_whyred-eng
+    pa_whyred-user \
+    pa_whyred-userdebug \
+    pa_whyred-eng
