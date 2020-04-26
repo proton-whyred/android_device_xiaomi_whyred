@@ -53,6 +53,9 @@ AUDIO_USE_DEEP_AS_PRIMARY_OUTPUT := false
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := false
 AUDIO_DISABLE_SWAP_CHANNELS := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := whyred
+
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
@@ -193,6 +196,10 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_whyred
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Renderscript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
