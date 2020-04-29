@@ -9,7 +9,7 @@ type sysfs_msm_subsys, sysfs_type, fs_type;
 allow ueventd ir_dev_file:chr_file { create setattr };
 
 # Touchscreen wake_gesture
-type sysfs_tap_to_wake, sysfs_type, fs_type;
+type sysfs_tap_to_wake, sysfs_type, fs_type, proc_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type proc_dt2w, fs_type, proc_type;
 
