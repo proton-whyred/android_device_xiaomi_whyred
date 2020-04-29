@@ -75,9 +75,10 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     liba2dpoffload \
+    libbluetooth_qti \
     libbthost_if \
     libhdmiedid \
     libhfp \
