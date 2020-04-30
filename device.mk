@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
     liba2dpoffload \
     libbthost_if \
     libhdmiedid \
+    libbtconfigstore \
     libhfp \
     libldacBT_dec \
     libsndmonitor \
