@@ -29,3 +29,5 @@ type thermal_data_file, file_type, data_file_type;
 
 allow platform_app vendor_display_prop:file read;
 allow platform_app camera_prop:file read;
+
+type viper_se, file_type;

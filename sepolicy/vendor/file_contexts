@@ -89,3 +89,5 @@
 /(vendor|system/vendor)/lib(64)?/vendor\.display\.config@1\.8\.so                                 u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/vendor\.display\.config@1\.9\.so				  u:object_r:same_process_hal_file:s0
 
+# Viper
+/mnt/vendor/persist/magisk/ViPER4AndroidFX/sepolicy\.rule                                         u:object_r:viper_se:s0
