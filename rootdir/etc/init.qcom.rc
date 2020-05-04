@@ -35,10 +35,7 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
-    # Enable sched_boost
-    write /proc/sys/kernel/sched_boost 1
-
-    # Change ownership of hw_recovery related nodes
+  # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_dbgbus
@@ -558,9 +555,6 @@ on property:persist.vendor.ssr.enable_ramdumps=0
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
 
 on property:sys.boot_completed=1
-    # Disable sched_boost
-    write /proc/sys/kernel/sched_boost 0
-
     write /dev/kmsg "Boot completed "
 
     #Reset read ahead for dm-0, dm-1, dm-3, dm-4, dm-5 and dm-6 to 128b
@@ -841,9 +835,6 @@ on property:init.svc.vendor.charger=running
     write /sys/devices/system/cpu/cpu6/online 0
     write /sys/devices/system/cpu/cpu7/online 0
     wait /dev/block/bootdevice
-
-    # Disable sched_boost
-    write /proc/sys/kernel/sched_boost 0
 
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler
