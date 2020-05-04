@@ -43,7 +43,7 @@ on post-fs
     chown system graphics /sys/devices/virtual/graphics/fb0/idle_time
     write /sys/devices/virtual/graphics/fb0/idle_time 100
 
-on init
+on property:vendor.post_boot.parsed=1
     # Setup permission for Power HAL
     chown root system /dev/stune/top-app/schedtune.boost
     chown root system /dev/cpu_dma_latency
