@@ -1,5 +1,5 @@
-type sysfs_rpm, sysfs_type, fs_type;
-type sysfs_wlan, sysfs_type, fs_type;
+type sysfs_rpm, sysfs_type, fs_type, debugfs_type;
+type sysfs_wlan, sysfs_type, fs_type, debugfs_type;
 type ir_dev_file, file_type;
 type fingerprint_data_file, file_type, data_file_type, core_data_file_type;
 type fingerprint_sysfs, fs_type, sysfs_type;
