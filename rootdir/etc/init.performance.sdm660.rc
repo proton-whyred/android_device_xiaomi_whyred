@@ -2,7 +2,7 @@ on init
 
     # Set Memory parameters
     write /sys/module/process_reclaim/parameters/min_score_adj 6
-    write /sys/module/process_reclaim/parameters/enable_process_reclaim 1
+    write /sys/module/process_reclaim/parameters/enable_process_reclaim 0
     write /sys/module/process_reclaim/parameters/pressure_min 50
     write /sys/module/process_reclaim/parameters/pressure_max 70
     write /sys/module/process_reclaim/parameters/swap_opt_eff 30
