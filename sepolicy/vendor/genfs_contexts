@@ -13,9 +13,9 @@ genfscon sysfs /devices/soc/soc:fpc1020/irq_enable              u:object_r:finge
 genfscon sysfs /devices/soc/soc:fpc1020/wakeup_enable           u:object_r:fingerprint_sysfs:s0
 
 # Power
-genfscon sysfs /rpm_stats                                     u:object_r:sysfs_rpm:s0
-genfscon sysfs /system_stats                                  u:object_r:sysfs_rpm:s0
-genfscon sysfs /wlan0                                         u:object_r:sysfs_wlan:s0
+genfscon debugfs /rpm_stats                                     u:object_r:debugfs_rpm:s0
+genfscon debugfs /system_stats                                  u:object_r:debugfs_rpm:s0
+genfscon debugfs /wlan0                                         u:object_r:debugfs_wlan:s0
 genfscon sysfs /devices/soc/soc:qcom,cpubw                      u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/soc/soc:qcom,mincpubw                   u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0                u:object_r:sysfs_devfreq:s0
