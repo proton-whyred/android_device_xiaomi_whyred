@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +18,38 @@
 
 set -e
 
-export DEVICE=whyred
-export VENDOR=xiaomi
-export DEVICE_BRINGUP_YEAR=2019
-export DEVICE_COMMON=sdm660-common
+DEVICE=whyred
+VENDOR=xiaomi
 
-./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
+INITIAL_COPYRIGHT_YEAR=2018
+
+# Load extract_utils and do some sanity checks
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+
+PA_ROOT="$MY_DIR"/../../..
+
+HELPER="$PA_ROOT"/vendor/pa/build/tools/extract_utils.sh
+if [ ! -f "$HELPER" ]; then
+    echo "Unable to find helper script at $HELPER"
+    exit 1
+fi
+. "$HELPER"
+
+# Initialize the helper
+setup_vendor "$DEVICE" "$VENDOR" "$PA_ROOT"
+
+# Copyright headers and guards
+write_headers
+
+write_makefiles "$MY_DIR"/proprietary-files.txt true
+
+cat << EOF >> "$BOARDMK"
+EOF
+
+cat << EOF >> "$ANDROIDMK"
+
+EOF
+
+# Finish
+write_footers
