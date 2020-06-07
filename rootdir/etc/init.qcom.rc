@@ -713,9 +713,17 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     disabled
     oneshot
 
+service affinity /vendor/etc/init.affinity.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
 
+    start affinity
 on property:vendor.post_boot.parsed=*
     setprop sys.post_boot.parsed ${vendor.post_boot.parsed}
 

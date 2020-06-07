@@ -241,6 +241,7 @@ PRODUCT_BOOT_JARS += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.affinity.sh \
     init.device.rc \
     init.insmod.sh \
     init.class_main.sh \
