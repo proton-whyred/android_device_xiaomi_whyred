@@ -35,6 +35,9 @@ on boot
     # Set permission for double tap to wake support
     chmod 0660 /proc/tp_gesture
     chown system system /proc/tp_gesture
+
+    chmod 0660 /sys/touchpanel/double_tap
+    chown system system /sys/touchpanel/double_tap
    
     # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*

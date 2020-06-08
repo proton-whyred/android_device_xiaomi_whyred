@@ -51,7 +51,7 @@
 /(vendor|system/vendor)/bin/mlipayd@1.1         u:object_r:hal_mlipay_default_exec:s0
 
 # Power HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.pixel-libperfmgr                 u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service                 u:object_r:hal_power_default_exec:s0
 
 # RTC
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0(/.*)? u:object_r:sysfs_rtc:s0
@@ -61,6 +61,8 @@
 
 # Tap to Wake
 /proc/tp_gesture u:object_r:sysfs_tap_to_wake:s0
+/sys/touchpanel/double_tap u:object_r:sysfs_tap_to_wake:s0
+/proc/touchpanel/wake_gesture u:object_r:sysfs_tap_to_wake:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0

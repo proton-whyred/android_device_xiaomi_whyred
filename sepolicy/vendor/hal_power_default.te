@@ -1,4 +1,5 @@
 allow hal_power_default sysfs_touchpanel:file rw_file_perms;
+allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default proc_dt2w:file rw_file_perms;
 allow hal_power_default sysfs_tap_to_wake:file rw_file_perms;
 
@@ -10,6 +11,7 @@ allow hal_power_default proc:dir search;
 r_dir_file(hal_power_default, debugfs_rpm)
 r_dir_file(hal_power_default, debugfs_wlan)
 r_dir_file(hal_power_default, sysfs_graphics)
+
 
 # To do powerhint on nodes defined in powerhint.json
 allow hal_power_default sysfs_devfreq:dir search;
