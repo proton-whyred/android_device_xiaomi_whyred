@@ -390,11 +390,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.pixel-libperfmgr
-
-# Powerhint
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    android.hardware.power@1.2-service
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
