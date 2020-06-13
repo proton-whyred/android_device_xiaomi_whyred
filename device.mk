@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
     antradio_app \
     libantradio
 
+# Apex
+$(call inherit-product, vendor/google-customization/config.mk)
+
 # AuthSecret
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
