@@ -225,7 +225,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     init.affinity.sh \
     init.device.rc \
-    init.insmod.sh \
     init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.qcom.post_boot.sh \
@@ -238,11 +237,7 @@ PRODUCT_PACKAGES += \
     init.performance.sdm660.rc \
     ueventd.qcom.rc
 
-# Insmod files
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
-
-# ION
+# Ion
 PRODUCT_PACKAGES += \
     libion
 

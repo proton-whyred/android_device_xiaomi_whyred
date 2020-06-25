@@ -51,9 +51,6 @@ on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
 on init
-    # Loading kernel modules in background
-    start insmod_sh
-
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
@@ -77,14 +74,6 @@ on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
     write /sys/class/graphics/fb0/idle_time 100
-
-on late-fs
-    # Start services for bootanim
-    start surfaceflinger
-    start bootanim
-    start vendor.hwcomposer-2-2
-    start vendor.configstore-hal
-    start vendor.qti.hardware.display.allocator
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -729,13 +718,6 @@ on property:vendor.post_boot.parsed=*
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
-
-service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.cfg
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
 
 service vendor.qvop-daemon /vendor/bin/qvop-daemon
     class late_start
