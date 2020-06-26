@@ -3,3 +3,9 @@ allow rild qcom_ims_prop:file { getattr open read };
 
 allow ims diag_device:chr_file { read write open ioctl };
 allow rild diag_device:chr_file { read write open ioctl };
+
+allow dpmd diag_device:chr_file { read write };
+allow cnd diag_device:chr_file { read write };
+allow qti diag_device:chr_file { read write };
+allow adpl diag_device:chr_file { read write };
+allow netmgrd diag_device:chr_file { read write };

@@ -6,3 +6,4 @@ allow hal_audio_default vendor_data_file:file { append create getattr open read 
 allow hal_audio_default sysfs:dir r_dir_perms;
 allow hal_audio_default diag_device:chr_file { read write };
 allow hal_graphics_composer_default diag_device:chr_file { read write };
+allow hal_audio_default diag_device:chr_file open;
