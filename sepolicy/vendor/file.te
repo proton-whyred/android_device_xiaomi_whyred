@@ -33,3 +33,5 @@ allow platform_app camera_prop:file read;
 type viper_se, file_type;
 
 type power_stats_service, vndservice_manager_type;
+
+type sysfs_torch, fs_type, sysfs_type;
