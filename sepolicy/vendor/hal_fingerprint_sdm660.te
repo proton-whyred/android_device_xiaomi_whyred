@@ -33,4 +33,6 @@ binder_call(hal_fingerprint_sdm660, hal_perf_default)
 r_dir_file(hal_fingerprint_sdm660, firmware_file)
 set_prop(hal_fingerprint_sdm660, hal_fingerprint_prop)
 
+r_dir_file(hal_fingerprint_default, sysfs_devfreq)
+
 dontaudit hal_fingerprint_default storage_file:dir search;
