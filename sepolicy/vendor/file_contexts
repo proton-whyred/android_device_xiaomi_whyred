@@ -1,6 +1,9 @@
 # Biometric
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sdm660   u:object_r:hal_fingerprint_sdm660_exec:s0
 
+# Debugfs
+/sys/kernel/debug/system_stats                                                          u:object_r:debugfs:s0
+
 # Fingerprint
 /data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
 /data/vendor/fpc(/.*)?                          u:object_r:fingerprint_vendor_data_file:s0
@@ -32,6 +35,9 @@
 
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
+
+# Pixel Powerhal
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.xiaomi_sdm660-libperfmgr                 u:object_r:hal_power_default_exec:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
