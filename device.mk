@@ -447,6 +447,9 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.sdm660
 
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.xiaomi_whyred
