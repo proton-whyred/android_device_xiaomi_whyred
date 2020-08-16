@@ -24,7 +24,7 @@
 DEVICE_PATH := device/xiaomi/whyred
 
 # Inherit properties.mk
-$(call inherit-product, $(DEVICE_PATH)/vendor_props.mk)
+$(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \

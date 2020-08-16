@@ -196,9 +196,6 @@ TARGET_USES_NON_LEGACY_POWERHAL := true
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
