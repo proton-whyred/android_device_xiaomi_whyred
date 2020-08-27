@@ -17,7 +17,6 @@ type proc_dt2w, fs_type, proc_type;
 type fingerprintd_device, file_type, dev_type;
 type persist_fingerprint_file, file_type;
 type sysfs_fingerprint, sysfs_type, fs_type;
-type persist_audio_file, file_type;
 
 # Hall Switch
 type hall_dev, sysfs_type, fs_type;
