@@ -93,6 +93,10 @@ if [ -f /sys/devices/soc0/select_image ]; then
     echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
 
+echo $((1024 * 1048576)) > /sys/block/vbswap0/disksize
+mkswap /dev/block/vbswap0
+swapon /dev/block/vbswap0
+
 # Parse misc partition path and set property
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
