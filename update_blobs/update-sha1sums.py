@@ -20,12 +20,12 @@ import os
 import sys
 from hashlib import sha1
 
-device='whyred'
-vendor='xiaomi'
+device = 'whyred'
+vendor = 'xiaomi'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()
-vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
+vendorPath = '../../../../vendor/' + vendor + '/' + device + '/proprietary'
 needSHA1 = False
 
 

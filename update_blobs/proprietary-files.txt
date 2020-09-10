@@ -1,4 +1,4 @@
-# Audio Power Amplifier
+# Audio Firmware
 vendor/firmware/dbmd4_va_fw.bin
 vendor/firmware/tas2557_uCDSP.bin
 vendor/firmware/tfa98xx.cnt
@@ -16,7 +16,7 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera - from V10.3.5.0.PEICNXM
-vendor/lib/hw/camera.sdm660.so|b372596587eb0552e0f75a073b542a31f1ab0cd1
+vendor/lib/hw/camera.sdm660.so|1756e6a5f76401014a55c391d7d1692a4a823227
 vendor/lib/libSonyIMX376C3RmscLibrary.so|b3138daf9b93c645b89b67d28c3f6fadfbbfdb42
 vendor/lib/libSonyIMX376KRmscLibrary.so|2f7792d51bf476352590b8643e43762f68cadeef
 vendor/lib/libXMFD_AgeGender.so|8fd7c01de2f6c58749fcc333114b5622a2c2152b
@@ -178,6 +178,10 @@ vendor/lib64/libscvePanorama.so|f5ec3a5bf23dac1aea4896379a5bfd484c21277a
 vendor/lib64/libscvePanorama_lite.so|ecf48aa1f938b31ba70cc24756ea6e90cf04df6d
 vendor/lib64/libvideoutils.so|42ffbcce5e16eacbb089fc6ae27af8e1a66284f3
 
+# Camera watermark - from jasmine V11.0.8.0.QDIMIXM
+vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
+vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
+
 # Camera - libmmcamera whyred - from V10.3.5.0.PEICNXM
 vendor/lib/libmmcamera_whyred_ov13855_sunny_cn_i.so|a8f43f1e7e82ceb662b5ed1e87f13621bb305ebb
 vendor/lib/libmmcamera_whyred_ov13855_sunny_cn_i_eeprom.so|e3a0c09e4c79bcc2353e6893771683404b9bf452
@@ -192,31 +196,31 @@ vendor/lib/libmmcamera_whyred_s5k5e8_ofilm_i_eeprom.so|c6316d9d9ee556f3ce51426e8
 vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii.so|e7584a6ba94f89b041dd387308c5dccddcc4e748
 vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii_eeprom.so|e4690626f9e5a92ecc654a25532bdd9cec0da255
 
-# Camera configs
-vendor/etc/camera/camera_config.xml
-vendor/etc/camera/csidtg_camera.xml
-vendor/etc/camera/csidtg_chromatix.xml
-vendor/etc/camera/female_bg.png
-vendor/etc/camera/female_icon.png
-vendor/etc/camera/male_bg.png
-vendor/etc/camera/male_icon.png
-vendor/etc/camera/score_bg.png
-vendor/etc/camera/score_icon.png
-vendor/etc/MIUI_DualCamera_watermark.png
-vendor/etc/MIUI_Time.ttf
-vendor/etc/Miui-Light.ttf
-vendor/etc/camera/whyred_ov13855_sunny_cn_i_chromatix.xml
-vendor/etc/camera/whyred_s5k2l7_ofilm_cn_i_chromatix.xml
-vendor/etc/camera/whyred_s5k2l7_qtech_cn_ii_chromatix.xml
-vendor/etc/camera/whyred_s5k3l8_ofilm_cn_ii_chromatix.xml
-vendor/etc/camera/whyred_s5k5e8_ofilm_cn_i_chromatix.xml
-vendor/etc/camera/whyred_s5k5e8_qtech_cn_ii_chromatix.xml
-vendor/etc/camera/whyred_imx376_ofilm_global_i_chromatix.xml
-vendor/etc/camera/whyred_imx376_sunny_global_ii_chromatix.xml
-vendor/etc/camera/whyred_imx486_ofilm_global_i_chromatix.xml
-vendor/etc/camera/whyred_imx486_qtech_global_ii_chromatix.xml
-vendor/etc/camera/whyred_s5k5e8_ofilm_global_i_chromatix.xml
-vendor/etc/camera/whyred_s5k5e8_qtech_global_ii_chromatix.xml
+# Camera configs - from V10.3.5.0.PEICNXM
+vendor/etc/camera/camera_config.xml|cf45979d9ca699602f4cbd3b25cf2a88110b3d5e
+vendor/etc/camera/csidtg_camera.xml|406e2dec13dc910415ff72fc5a7ee084c97ab61f
+vendor/etc/camera/csidtg_chromatix.xml|e95fad08db854906529b4df3c1b238ebbb36b2df
+vendor/etc/camera/female_bg.png|1209828fb0b4d425ee75498531bdcfe2f4eacb2e
+vendor/etc/camera/female_icon.png|ebd7db92ef2f28d191e68c3b955ba7c2053c7418
+vendor/etc/camera/male_bg.png|2648ece202669141be45ccc09a688ec8e6465533
+vendor/etc/camera/male_icon.png|d17f76b5937bd3f6a9afb04bcf83da98600788e5
+vendor/etc/camera/score_bg.png|6628867b901936b88fb6f88d494987a1b43533ec
+vendor/etc/camera/score_icon.png|8580e0abbf401a09c6581b82e9c00cd78fb8951f
+vendor/etc/MIUI_DualCamera_watermark.png|7d3070611a5d1b171df56c1774a8243faef39370
+vendor/etc/MIUI_Time.ttf|ad1c4cb5fdc53731c4b263076d8a0a183fbe263d
+vendor/etc/Miui-Light.ttf|e2eb7464fb42d6d2395d4ab9953ce101291677fb
+vendor/etc/camera/whyred_ov13855_sunny_cn_i_chromatix.xml|6024067c5ba5d541499651a7009a790024d895d6
+vendor/etc/camera/whyred_s5k2l7_ofilm_cn_i_chromatix.xml|60dc9a31a6a97e1ea109e25ac46357b7518538cc
+vendor/etc/camera/whyred_s5k2l7_qtech_cn_ii_chromatix.xml|294a311ba8995db90db7d5aec866c4f26ff83e45
+vendor/etc/camera/whyred_s5k3l8_ofilm_cn_ii_chromatix.xml|6e0ed0be17e3f68c9a8943a9327fce14016bb28c
+vendor/etc/camera/whyred_s5k5e8_ofilm_cn_i_chromatix.xml|11d4d75af72a78552c7404f0935d200772aaea12
+vendor/etc/camera/whyred_s5k5e8_qtech_cn_ii_chromatix.xml|8d9625e64fc97d40d02fc148f36c3eda784fec83
+vendor/etc/camera/whyred_imx376_ofilm_global_i_chromatix.xml|7e3713f5c6a90a26c2693972549b060191ed5781
+vendor/etc/camera/whyred_imx376_sunny_global_ii_chromatix.xml|c4676b095b3e0b37843b64e5effe9cff21f309b7
+vendor/etc/camera/whyred_imx486_ofilm_global_i_chromatix.xml|beb9eeb56fd43758bb2ca43894835fa1dded73b1
+vendor/etc/camera/whyred_imx486_qtech_global_ii_chromatix.xml|97472c6f2595dd06cbba4acec46bf2024c587b81
+vendor/etc/camera/whyred_s5k5e8_ofilm_global_i_chromatix.xml|e4123a4dfec909c49b42e5284f3613d9b6a4aabf
+vendor/etc/camera/whyred_s5k5e8_qtech_global_ii_chromatix.xml|9718e5719de4afd62b7a31273be48d669241cbe5
 
 # Camera actuators - from V10.3.5.0.PEICNXM
 vendor/lib/libactuator_whyred_s5k2l7_ofilm_cn_i_ak7374.so|70ab5f7bb6367ead44e77faee8c747f0787c6d6c
@@ -638,26 +642,22 @@ vendor/lib/libmmcamera_whyred_imx486_ofilm_global_i_eeprom.so|f38c01852206f5822e
 vendor/lib/libmmcamera_whyred_imx486_qtech_global_ii.so|9232052a33eef3981fac9b66d7e71cc2f492a02d
 vendor/lib/libmmcamera_whyred_imx486_qtech_global_ii_eeprom.so|74c5776c5b3b943a4d4131567c7abd8594a91804
 
-# Camera firmware
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
+# Camera firmware - from V10.3.5.0.PEICNXM
+vendor/firmware/cpp_firmware_v1_1_1.fw|04b8eb253d630eaeadab296e1607dc6a29d93d3c
+vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
+vendor/firmware/cpp_firmware_v1_2_0.fw|5ff0d66bcdbb29f4e924d011ae825583e48b3962
+vendor/firmware/cpp_firmware_v1_4_0.fw|11eba982212797920102912142940a9e08931c52
+vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
+vendor/firmware/cpp_firmware_v1_5_1.fw|f3f622ab29a560b170d0f2c6ddec14b933f2d476
+vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
+vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
+vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
+vendor/firmware/cpp_firmware_v1_10_0.fw|a3c0fc706eb3f23b99852fe8c52c26f63999f70c
+vendor/firmware/cpp_firmware_v1_12_0.fw|c7939d46f9875054c5b30c3280862e7d9df3dcf9
 
-# Camera OIS
-vendor/lib/libois_bu63165.so
-vendor/lib/libois_lc898122.so
-
-# Camera watermark - from jasmine V11.0.8.0.QDIMIXM
-vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
-vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
+# Camera OIS - from V10.3.5.0.PEICNXM
+vendor/lib/libois_bu63165.so|1a101191e3326648d9c517f184e40255154bc993
+vendor/lib/libois_lc898122.so|26304ff7cf07d2782a79e4e743f4ce2e0a1063bf
 
 # Consumerir
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
@@ -702,16 +702,22 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# Gatekeeper
+vendor/lib/hw/gatekeeper.sdm660.so
+vendor/lib64/hw/gatekeeper.sdm660.so
+
+# Keystore
+vendor/lib/hw/keystore.sdm660.so
+vendor/lib64/hw/keystore.sdm660.so
+
+# Libdolphin - from caf
+lib/libdolphin.so|bc32d9007b017efc904a3ad4fb64cde10d453b28
+lib64/libdolphin.so|699e7332b8a5a1217beef6acbe18b0c4c89a3fcc
+
 # Sensors
 vendor/etc/sensors/sensor_def_qcomdev.conf
-vendor/lib/sensors.ssc.so
-vendor/lib64/sensors.ssc.so
 
 # Thermal
 vendor/etc/thermal-engine.conf
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-
-# Wifi - from jasmine V11.0.8.0.QDIMIXM
-vendor/bin/cnss-daemon|a371213adc8fc7677d519c8d942761ffeee0f345
+vendor/etc/thermal-engine-map.conf
+vendor/etc/thermal-engine-normal.conf
