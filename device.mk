@@ -439,7 +439,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libstdc++.vendor  \
     vndk-ext \
-    vndk_package
+    vndk_package \
+    com.android.vndk.current.on_vendor
 
 #Vibrator
 PRODUCT_PACKAGES += \
