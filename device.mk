@@ -180,24 +180,7 @@ PRODUCT_PACKAGES += \
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# GPS / Location
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0-impl-qti \
-    android.hardware.gnss@2.0-service-qti \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libsensorndkbridge \
-    libwifi-hal-ctrl
-
-# GPS Config
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    $(DEVICE_PATH)/gps/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    $(DEVICE_PATH)/gps/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    $(DEVICE_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
-    $(DEVICE_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    $(DEVICE_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+$(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
 
 # Healthd
 PRODUCT_PACKAGES += \
