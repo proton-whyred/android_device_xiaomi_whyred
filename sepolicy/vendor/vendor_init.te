@@ -32,6 +32,18 @@ allow vendor_init fingerprint_data_file:dir {setattr create};
 allow vendor_init blkio_dev:file create_file_perms;
 allow vendor_init proc_dirty:file write;
 
+allow vndservicemanager mnt_vendor_file:dir { r_file_perms search };
+allow hal_bluetooth_qti persist_audio_file:dir { r_file_perms search };
+allow hal_rcsservice diag_device:chr_file rw_file_perms;
+allow hal_imsrtp mnt_vendor_file:dir { search r_file_perms };
+allow qti mnt_vendor_file:dir { search r_file_perms };
+allow adpl mnt_vendor_file:dir { search r_file_perms };
+allow rild mnt_vendor_file:dir { search r_file_perms };
+allow ims mnt_vendor_file:dir { search r_file_perms };
+allow cnd mnt_vendor_file:dir { search r_file_perms };
+allow netmgrd mnt_vendor_file:dir { search r_file_perms };
+allow hal_dpmQmiMgr mnt_vendor_file:dir { search r_file_perms };
+
 set_prop(vendor_init, camera_prop)
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, freq_prop)

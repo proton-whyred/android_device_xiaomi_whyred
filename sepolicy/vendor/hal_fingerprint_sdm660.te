@@ -55,5 +55,5 @@ binder_call(hal_fingerprint_sdm660, hal_perf_default)
 r_dir_file(hal_fingerprint_sdm660, firmware_file)
 set_prop(hal_fingerprint_sdm660, hal_fingerprint_prop)
 
-allow hal_fingerprint_sdm660 media_rw_data_file:dir search;
+allow hal_fingerprint_sdm660 media_rw_data_file:dir { r_file_perms search };
 dontaudit hal_fingerprint_default storage_file:dir search;
