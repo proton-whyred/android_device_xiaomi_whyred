@@ -419,6 +419,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything 
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcutils_shim
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \

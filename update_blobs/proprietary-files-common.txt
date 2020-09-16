@@ -227,7 +227,7 @@ product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
 product/lib64/libdpmctmgr.so|597790027ff767d64e89c4a83cdafc18ce4179d5
 product/lib64/libdpmfdmgr.so|eb882f1e5983e18eda9718a1451019cecbead5a6
-product/lib64/libdpmframework.so|68a0df93a458adcc946c5beceddabce13c25c547
+product/lib64/libdpmframework.so|45ccf4130672f3b1a95f7afbcd858db29749f365
 product/lib64/libdpmtcm.so|b53544d539e1196717cac122402139c8bf341af1
 vendor/bin/dpmQmiMgr|ecfa5d218dc45839998a613dbb1db6a99cc83fb7
 vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
@@ -810,7 +810,7 @@ vendor/lib64/libthermalioctl.so|7c7a784d8ead3d932d164cfc953b09e621060d90
 -vendor/lib64/libthermalclient.so|3412ce67da6a58d7f44a65e6b8af8cc5bfb9f506
 
 # Time services - from LA.UM.8.2.r1-06700-sdm660.0
--vendor/app/TimeService/TimeService.apk
+-vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
 -vendor/lib/libtime_genoff.so|d3d9308d4a5d736eb442f6e9daab47cdc5bb61c7
 -vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 vendor/bin/time_daemon|a3efd58d57f23d0f8e7cfe8da0d7887b2f3e48e8
