@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some common AOSPA stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLES_GAPPS := true
+TARGET_DISABLES_GMS := true
 $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Inherit from whyred device
