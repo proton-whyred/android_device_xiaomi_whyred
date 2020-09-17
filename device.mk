@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Apex
-$(call inherit-product, vendor/google-customization/config.mk)
+#$(call inherit-product, vendor/google-customization/config.mk)
 
 # AuthSecret
 PRODUCT_PACKAGES += \
