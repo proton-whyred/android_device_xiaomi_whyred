@@ -343,8 +343,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
+include vendor/qcom/opensource/power/power-vendor-board.mk
+$(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI

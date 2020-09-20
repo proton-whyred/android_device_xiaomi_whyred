@@ -191,9 +191,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
-TARGET_USES_NON_LEGACY_POWERHAL := true
-
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
