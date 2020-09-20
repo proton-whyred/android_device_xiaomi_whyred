@@ -212,6 +212,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
     debug.egl.hw=1 \
     debug.enable.sglscale=1 \
     debug.sf.disable_hwc=0 \
