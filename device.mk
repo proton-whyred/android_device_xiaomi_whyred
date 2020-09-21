@@ -136,13 +136,11 @@ PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
-    libdisplayconfig \
     liboverlay \
-    libqdMetaData \
-    libqdMetaData.system \
-    libtinyxml \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9_vendor
+    libtinyxml
+
+include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
 
 # Doze
 PRODUCT_PACKAGES += \
