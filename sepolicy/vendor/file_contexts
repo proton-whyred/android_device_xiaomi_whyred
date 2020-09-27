@@ -54,6 +54,9 @@
 /(vendor|system/vendor)/lib(64)?/vendor\.qti\.hardware\.perf@2\.1\.so    u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.perf@2\.1-service       u:object_r:hal_perf_default_exec:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service               u:object_r:hal_power_default_exec:s0
+
 # RTC
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0(/.*)? u:object_r:sysfs_rtc:s0
 
