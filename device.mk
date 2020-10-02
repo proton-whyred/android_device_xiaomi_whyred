@@ -208,8 +208,6 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     init.performance.sdm660.rc \
@@ -435,8 +433,7 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 #  VNDK
 PRODUCT_PACKAGES += \
