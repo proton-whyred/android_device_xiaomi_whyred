@@ -121,7 +121,7 @@ int ipa_reset_hw_index_counter();
 
 #ifdef FEATURE_IPACM_HAL
 	IPACM_OffloadManager* OffloadMng;
-	HAL *hal;
+	::android::sp<HAL> hal;
 #endif
 
 /* start netlink socket monitor*/
@@ -760,10 +760,19 @@ void* ipa_driver_msg_notifier(void *param)
 				IPACMERR("calling OffloadMng->elrInstance->onOffloadStopped \n");
 				OffloadMng->elrInstance->onOffloadStopped(IpaEventRelay::ERROR);
 			}
-			/* WA to clean up wlan instances during SSR */
-			evt_data.event = IPA_SSR_NOTICE;
-			evt_data.evt_data = NULL;
-			break;
+			/* Starting from Hastings, WLAN is not restarted as part of Modem SSR.
+			 * No need to reset NAT Iface.
+			 */
+#ifdef IPA_HW_v4_9
+                        if (IPACM_Iface::ipacmcfg->GetIPAVer() != IPA_HW_v4_9)
+#endif
+			{
+                                /* WA to clean up wlan instances during SSR */
+                                evt_data.event = IPA_SSR_NOTICE;
+                                evt_data.evt_data = NULL;
+                                break;
+                        }
+                        continue;
 		case IPA_SSR_AFTER_POWERUP:
 			IPACMDBG_H("Received IPA_SSR_AFTER_POWERUP\n");
 			OffloadMng = IPACM_OffloadManager::GetInstance();
@@ -951,11 +960,11 @@ int main(int argc, char **argv)
 	IPACMDBG_H(" START IPACM_OffloadManager and link to android framework\n");
 #endif
 
-#ifdef FEATURE_ETH_BRIDGE_LE
-	IPACM_LanToLan* lan2lan = IPACM_LanToLan::get_instance();
-	IPACMDBG_H("Staring IPACM_LanToLan instance %p\n", lan2lan);
-#endif
-
+	if (IPACM_Iface::ipacmcfg->isEthBridgingSupported())
+	{
+		IPACM_LanToLan* lan2lan = IPACM_LanToLan::get_instance();
+		IPACMDBG_H("Staring IPACM_LanToLan instance %p\n", lan2lan);
+	}
 	CtList = new IPACM_ConntrackListener();
 
 	IPACMDBG_H("Staring IPA main\n");
