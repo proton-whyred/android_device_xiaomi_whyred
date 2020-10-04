@@ -139,8 +139,8 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
-include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -178,6 +178,7 @@ PRODUCT_PACKAGES += \
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# GPS
 $(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
 
 # Healthd
@@ -347,7 +348,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Power
-include vendor/qcom/opensource/power/power-vendor-board.mk
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
 # Preopt SystemUI

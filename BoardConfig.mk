@@ -125,7 +125,7 @@ BOARD_HAVE_QCOM_FM := true
 BOARD_HAVE_FM_RADIO := true
 
 # GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+-include hardware/qcom/gps/gps_vendor_board.mk
 LOC_HIDL_VERSION := 3.0
 
 # HWUI
@@ -190,6 +190,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
+
+# Power
+-include vendor/qcom/opensource/power/power-vendor-board.mk
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
