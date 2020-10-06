@@ -108,9 +108,6 @@ USE_OPENGL_RENDERER := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
-
 # EXFAT
 TARGET_EXFAT_DRIVER := sdfat
 
@@ -184,9 +181,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
-
-# Power
--include vendor/qcom/opensource/power/power-vendor-board.mk
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true

@@ -392,10 +392,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Power
-$(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
-
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.1.vendor
+    android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr
 
 # Protobuf
 PRODUCT_PACKAGES += \

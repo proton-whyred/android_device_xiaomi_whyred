@@ -33,7 +33,7 @@ on boot
     chown system system /sys/android_camera/sensor
 
     # Set permission for double tap to wake support
-    chmod 0660 /proc/tp_gesture
+    chmod 0664 /proc/tp_gesture
     chown system system /proc/tp_gesture
 
     chmod 0660 /sys/touchpanel/double_tap
