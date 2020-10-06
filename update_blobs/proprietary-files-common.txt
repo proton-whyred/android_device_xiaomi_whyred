@@ -346,6 +346,7 @@ vendor/lib64/libgdtap.so|b3135dcc4c290cb61b8a959b1fb6ce0897539905
 vendor/lib64/libizat_client_api.so|2343abbe03743adb24a79762feb89a2174b9b838
 vendor/lib64/libizat_core.so|b2b3ae5e2feb4426fdb268b0faff3255f6102986
 vendor/lib64/liblbs_core.so|bda09802c11ddf5b5a171f4c3c6331ac57c04311
+vendor/lib64/libloc_api_v02.so|2a9fa39bd5df5fc7db31602f730288bad72e0820
 vendor/lib64/liblocationservice.so|91d7f1b52bbc3941630fb2392f1726e5bfbef8c4
 vendor/lib64/liblocationservice_glue.so|6341ec7f5ed873c310e814c685d6bec74b7bce02
 vendor/lib64/liblowi_client.so|e32c1c0d6ca9e25b4ff8ad876021947acdc2b88a
@@ -429,6 +430,28 @@ vendor/lib64/libsdm-diag.so|db4c495e3e64ea0cbc0d079a2aa16862a9b02192
 -vendor/lib64/libsdm-disp-vndapis.so|92fe3602eaaae1847965e8886d2cbef3d0a801f8
 vendor/lib64/libsdmextension.so|71d2737fea43aa19216f63d551d2abf7ae02794e
 vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
+
+# HWC - from AOSPA Quartz ( prebuilt )
+vendor/lib/hw/hwcomposer.sdm660.so|be5a72911a4608e49b12eb28c5bcf4effae8da68
+vendor/lib64/hw/hwcomposer.sdm660.so|1f86f1f582457c0c5613c43a2c7d5fad5a0a4e79
+vendor/lib/hw/gralloc.sdm660.so|dd22e28a0569756dd76ebeef85c62571cf732704
+vendor/lib64/hw/gralloc.sdm660.so|524656e2d232fa9e935b0bb7012fdce0429c5b8c
+vendor/lib/hw/gralloc.default.so|f2bf20ab3227b8ceec1c9b98e9d37d1306ff6d71
+vendor/lib64/hw/gralloc.default.so|68b5c978447c5e0733f7a95924eba3dfeb578fea
+vendor/lib/libgrallocutils.so|34d92c628324becaee4d97b46d1f48ac17ef4119
+vendor/lib64/libgrallocutils.so|71f0131ada666a24b21e0ef81faf282764c0d9f0
+vendor/lib/libqservice.so|e0d4ad1d667bd15536aa7ca553833fea97b39d0f
+vendor/lib64/libqservice.so|84d44e2efedea09825849f10fe8e64a6b6275b01
+vendor/lib/libqdutils.so|e6c3932e84172c41dcac07669f6a4790ee54eb60
+vendor/lib64/libqdutils.so|a12b92ed9b23cff03a018f3669f7e44f6f7585b7
+vendor/lib/libqdMetaData.so|627e7ad7f5f72ea059c4ea765d66065789fb8b9d
+vendor/lib64/libqdMetaData.so|efb25325edf886f94a4c5baa452849f22eab9c25
+vendor/lib/libsdmutils.so|39b48d4b2a029d1170211a1474db15c3c110613a
+vendor/lib64/libsdmutils.so|87d7ad6b14b2000828d44d295835b7dcb0da08ec
+vendor/lib/libsdmcore.so|1f430c63a9d98cfd74577725e27a988632b0fc35
+vendor/lib64/libsdmcore.so|e6f198bf7f7c44b8483f2b726e4cad7a1fcdc9b5
+vendor/lib/libqdutils.so|e6c3932e84172c41dcac07669f6a4790ee54eb60
+vendor/lib64/libqdutils.so|a12b92ed9b23cff03a018f3669f7e44f6f7585b7
 
 # Graphics (Vulkan) - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/lib/hw/vulkan.sdm660.so|7f677363774e3c12613f004922cb7aba9aa3bf7b

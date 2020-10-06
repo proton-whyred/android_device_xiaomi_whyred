@@ -133,14 +133,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.sdm660 \
-    hwcomposer.sdm660 \
     memtrack.sdm660 \
+    libdisplayconfig \
     liboverlay \
-    libtinyxml
-
-$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
-$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+    libtinyxml \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9_vendor
 
 # Doze
 PRODUCT_PACKAGES += \
