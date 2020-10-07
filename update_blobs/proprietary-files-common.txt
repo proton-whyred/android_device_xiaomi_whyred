@@ -309,8 +309,6 @@ etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01c
 etc/permissions/com.qualcomm.location.xml|1d36e7cf8e16813aa13ee6b3fca8d8687b543828
 etc/permissions/izat.xt.srv.xml|a0f460056f27b5495a4d6e959eecf0e429c42a57
 etc/permissions/privapp-permissions-com.qualcomm.location.xml|2dc7fba818bdf582bfea849a74f4b312d90745c9
-framework/com.qti.location.sdk.jar|818412737625293e1ef526a2b90bb0cd2d141fe4
-framework/izat.xt.srv.jar|665e45694ff4dc4c610448be853c1ea1ca0ede4c
 lib/liblocationservice_jni.so|65cc882fca41fb3324559ad83abda3658d3aaab0
 lib/libxt_native.so|980fd62626822ce1617f36ccf63d4d6dd55c53d7
 lib64/liblocationservice_jni.so|23eaa609131ed33eda8bca9c6af9fd59586820a0
