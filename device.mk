@@ -195,6 +195,9 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+PRODUCT_BOOT_JARS := \
+    android.hidl.manager-V1.0-java
+
 # IFAAService
 PRODUCT_PACKAGES += \
     IFAAService \
