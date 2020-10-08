@@ -225,6 +225,8 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.safailnet.rc \
     init.target.rc \
@@ -454,7 +456,8 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # USB
-$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
 
 #  VNDK
 PRODUCT_PACKAGES += \
