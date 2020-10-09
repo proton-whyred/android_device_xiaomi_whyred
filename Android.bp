@@ -2,4 +2,7 @@ subdirs = [
     "*"
 ]
 soong_namespace {
+    imports: [
+        "vendor/qcom/opensource/commonsys/packages/apps/Bluetooth",
+    ],
 }

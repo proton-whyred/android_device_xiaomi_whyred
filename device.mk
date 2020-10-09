@@ -28,7 +28,8 @@ $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # Audio
 $(call inherit-product, hardware/qcom/audio/configs/sdm660/sdm660.mk)
@@ -79,6 +80,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    BluetoothQti \
     android.hardware.bluetooth.audio@2.0-impl \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     liba2dpoffload \
