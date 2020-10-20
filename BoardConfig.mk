@@ -98,7 +98,7 @@ BOARD_USES_QCNE := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Crypto
-#TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := true
 
 # Display
 BOARD_USES_ADRENO := true
