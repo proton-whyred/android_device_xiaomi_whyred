@@ -257,3 +257,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
+# Swap type
+PRODUCT_PROPERTY_OVERRIDES += \
+    swap_type=vbswap

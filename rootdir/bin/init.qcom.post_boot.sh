@@ -93,9 +93,27 @@ if [ -f /sys/devices/soc0/select_image ]; then
     echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
 
-echo $((1024 * 1048576)) > /sys/block/vbswap0/disksize
-mkswap /dev/block/vbswap0
-swapon /dev/block/vbswap0
+MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+MemTotal=${MemTotalStr:16:8}
+let RamSizeGB="( $MemTotal / 1048576 )"
+
+swapType=$(grep swap_type /vendor/build.prop)
+
+if [ $swapType = 'swap_type=vbswap' ]; then
+        if [ $RamSizeGB -lt 5 ]; then
+		echo $((1024 * 1048576)) > /sys/block/vbswap0/disksize
+		mkswap /dev/block/vbswap0
+		swapon /dev/block/vbswap0
+        fi
+elif [ $swapType = 'swap_type=zram' ]; then
+        if [ $RamSizeGB -lt 5 ]; then
+		echo $((1024 * 1048576)) > /sys/block/zram0/disksize
+		mkswap /dev/block/zram0
+		swapon /dev/block/zram0
+        fi
+elif [ $swapType = 'swap_type=none' ]; then
+	break
+fi
 
 # Parse misc partition path and set property
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
