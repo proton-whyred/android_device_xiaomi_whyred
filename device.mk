@@ -192,7 +192,7 @@ $(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
-    android.hardware.health@2.1-impl
+    android.hardware.health@2.1-impl-qti
 
 # HW crypto
 PRODUCT_PACKAGES += \
