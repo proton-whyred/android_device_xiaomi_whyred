@@ -299,6 +299,13 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# ntfs/exfat
+PRODUCT_PACKAGES += \
+    mkfs.exfat \
+    fsck.exfat \
+    mkfs.ntfs \
+    fsck.ntfs
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
