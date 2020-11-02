@@ -710,10 +710,6 @@ vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
-# Libdolphin - from caf
-lib/libdolphin.so|bc32d9007b017efc904a3ad4fb64cde10d453b28
-lib64/libdolphin.so|699e7332b8a5a1217beef6acbe18b0c4c89a3fcc
-
 # Sensors
 vendor/etc/sensors/sensor_def_qcomdev.conf
 

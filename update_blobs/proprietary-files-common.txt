@@ -415,6 +415,14 @@ vendor/lib64/libqdutils.so|a12b92ed9b23cff03a018f3669f7e44f6f7585b7
 vendor/lib/hw/vulkan.sdm660.so|7f677363774e3c12613f004922cb7aba9aa3bf7b
 vendor/lib64/hw/vulkan.sdm660.so|7f37b59e75cb1739b74ff9646dc958591cd7fa23
 
+# libbeluga - from ThankYouMario
+system_ext/lib/libbeluga.so|476b76af5190f5a88b71e217a54513abd0a0580f
+system_ext/lib64/libbeluga.so|323cadc5067d5b4641286d584aa30ac3a24cedbb
+
+# libdolphin - from ThankYouMario
+system_ext/lib/libdolphin.so|9469d5b20bcd6fd9087c4ea73c8c43cb23a297ad
+system_ext/lib64/libdolphin.so|2a317181f43e391b3ca363fb35c234680743082b
+
 # Listen - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/lib/hw/sound_trigger.primary.sdm660.so|336e4af06f2ddd74bf318bae8ce21388c7f90ac6
 vendor/lib/libadpcmdec.so|8c72aa1812bfa749f266020366894c8a3873d99c
