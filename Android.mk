@@ -128,3 +128,6 @@ ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
 
 subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
 $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
+
+$(shell mkdir -p $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64/ && pushd $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64 > /dev/null && ln -s /system_ext/lib64/libimscamera_jni.so libimscamera_jni.so && popd > /dev/null)
+$(shell mkdir -p $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64/ && pushd $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64 > /dev/null && ln -s /system_ext/lib64/libimsmedia_jni.so libimsmedia_jni.so && popd > /dev/null)
