@@ -745,6 +745,19 @@ vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
 vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
 vendor/lib64/sensors.ssc.so|b53f9d8a5580feb9ca8f9e4efd080f76dc1d1588
 
+# servicetracker - from oneplus8t (qssi-user-11-RP1A.201005.001-2010150042-release-keys)
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|398264eb694175afdaf700069598b362dfbac82d
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
+-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
+vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|3d42a5f995e1ae39a4c73268bed2e745eb9e5e7a
+vendor/lib/vendor.qti.hardware.servicetracker@1.0.so|0e1d3fbe0716640d909905cf06ba1c26f23931fc
+vendor/lib/vendor.qti.hardware.servicetracker@1.1.so|46659c0df51e7fca8c6f378273ceb45b7424855e
+vendor/lib/vendor.qti.hardware.servicetracker@1.2.so|3784b60726facbf53ef906600de05dcd4415d604
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|43981f6c0de53eb63e8b887e9dcdffacf6be3a04
+vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so|4e711e32a4893722910ee31c6279cdd6990d0755
+vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so|3951a1df5afab2d997e0b0eb99d81e85c27a3539
+vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so|545fe2bdb07ccda9e05d1cb8a2d65d122c948205
+
 # Soter - from LA.UM.8.2.r1-06200-sdm660.0
 -app/SoterService/SoterService.apk|482523fabe02255e7ab6f80fbaaabe32c8fb3be9
 
