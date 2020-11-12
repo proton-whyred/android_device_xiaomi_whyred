@@ -1,50 +1,14 @@
-#============= vendor_init ==============
 typeattribute vendor_init data_between_core_and_vendor_violators;
 
 allow vendor_init {
-  media_rw_data_file
   system_data_file
   tombstone_data_file
-  camera_data_file
 }:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
 
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
 
-allow vendor_init media_rw_data_file:file { getattr relabelfrom };
+allow init adsprpcd_file:file mounton;
 
-allow vendor_init rootfs:dir { add_name create setattr write };
-allow vendor_init persist_debug_prop:property_service set;
-allow vendor_init persist_debug_prop:file read;
-allow vendor_init persist_dpm_prop:property_service set;
-allow vendor_init qcom_ims_prop:property_service set;
-allow vendor_init thermal_engine_prop:property_service set;
-allow vendor_init vendor_ssr_prop:property_service set;
-allow vendor_init audio_prop:property_service set;
-allow vendor_init vendor_fp_prop:property_service set;
-allow vendor_init power_prop:property_service set;
-allow vendor_init reschedule_service_prop:property_service set;
-allow vendor_init bservice_prop:property_service set;
-
-allow vendor_init rootfs:dir { add_name write };
-allow vendor_init rootfs:lnk_file setattr;
-allow vendor_init fingerprint_data_file:dir {setattr create};
-
-allow vendor_init blkio_dev:file create_file_perms;
-allow vendor_init proc_dirty:file write;
-
-allow vndservicemanager mnt_vendor_file:dir { r_file_perms search };
-allow hal_bluetooth_qti persist_audio_file:dir { r_file_perms search };
-allow hal_rcsservice diag_device:chr_file rw_file_perms;
-allow hal_imsrtp mnt_vendor_file:dir { search r_file_perms };
-allow qti mnt_vendor_file:dir { search r_file_perms };
-allow adpl mnt_vendor_file:dir { search r_file_perms };
-allow rild mnt_vendor_file:dir { search r_file_perms };
-allow ims mnt_vendor_file:dir { search r_file_perms };
-allow cnd mnt_vendor_file:dir { search r_file_perms };
-allow netmgrd mnt_vendor_file:dir { search r_file_perms };
-allow hal_dpmQmiMgr mnt_vendor_file:dir { search r_file_perms };
-
-set_prop(vendor_init, camera_prop)
-set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, freq_prop)
-set_prop(vendor_init, fm_prop)
+set_prop(vendor_init, camera_prop)
+set_prop(vendor_init, vendor_power_prop)

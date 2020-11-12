@@ -1,36 +1,7 @@
-type debugfs_rpm, sysfs_type, fs_type, debugfs_type;
-type debugfs_wlan, sysfs_type, fs_type, debugfs_type;
+type debugfs_rpm, debugfs_type, fs_type;
 type ir_dev_file, file_type;
-type fingerprint_data_file, file_type, data_file_type, core_data_file_type;
-type fingerprint_sysfs, fs_type, sysfs_type;
-type sysfs_info, fs_type, sysfs_type;
-type sysfs_msm_subsys, sysfs_type, fs_type;
-
-allow ueventd ir_dev_file:chr_file { create setattr };
-
-# Touchscreen wake_gesture
-type sysfs_tap_to_wake, sysfs_type, fs_type, proc_type;
+type public_adsprpcd_file, file_type;
+type sysfs_fingerprint, fs_type, sysfs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
-type proc_dt2w, fs_type, proc_type;
-
-# Fingerprint
-type fingerprintd_device, file_type, dev_type;
-type persist_fingerprint_file, file_type;
-type sysfs_fingerprint, sysfs_type, fs_type;
-
-# Hall Switch
-type hall_dev, sysfs_type, fs_type;
-
-# Kcal
-type kcal_dev, sysfs_type, fs_type;
-
+type sysfs_tap_to_wake, sysfs_type, fs_type, proc_type;
 type thermal_data_file, file_type, data_file_type;
-
-allow platform_app vendor_display_prop:file read;
-allow platform_app camera_prop:file read;
-
-type viper_se, file_type;
-
-type power_stats_service, vndservice_manager_type;
-
-type sysfs_torch, fs_type, sysfs_type;
