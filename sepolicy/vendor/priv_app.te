@@ -1,1 +1,2 @@
 allow priv_app exported_camera_prop:file { read open getattr };
+allow priv_app sysfs_graphics:file { read open getattr };

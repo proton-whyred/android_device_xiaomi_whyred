@@ -1,1 +1,5 @@
 allow system_server exported_camera_prop:file { read open getattr };
+allow system_server userspace_reboot_config_prop:file { read open getattr };
+allow system_server userspace_reboot_exported_prop:file { read open getattr };
+allow system_server proc:file getattr;
+allow system_server app_zygote:process getpgid;
