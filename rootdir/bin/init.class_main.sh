@@ -36,14 +36,6 @@ datamode=`getprop persist.vendor.data.mode`
 qcrild_status=true
 
 case "$baseband" in
-    "apq" | "sda" | "qcs" )
-    setprop ro.vendor.radio.noril yes
-    stop ril-daemon
-    stop vendor.ril-daemon
-    stop vendor.qcrild
-esac
-
-case "$baseband" in
     "msm" | "csfb" | "svlte2a" | "mdm" | "mdm2" | "sglte" | "sglte2" | "dsda2" | "unknown" | "dsda3" | "sdm" | "sdx" | "sm6")
 
     # For older modem packages launch ril-daemon.

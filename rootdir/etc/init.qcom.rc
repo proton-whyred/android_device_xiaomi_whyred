@@ -709,12 +709,6 @@ on property:vendor.post_boot.parsed=*
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
-service vendor.qvop-daemon /vendor/bin/qvop-daemon
-    class late_start
-    user system
-    group system drmrpc
-    writepid /dev/cpuset/system-background/tasks
-
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system

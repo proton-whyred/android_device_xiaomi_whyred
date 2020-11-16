@@ -296,11 +296,6 @@ on charger
     start vendor.thermal-engine
     start charger
 
-service vendor.qfp-daemon /vendor/bin/qfp-daemon
-    class late_start
-    user system
-    group system drmrpc diag input
-
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      class main
      user root
