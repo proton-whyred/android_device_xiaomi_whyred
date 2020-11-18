@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libdisplayconfig \
     liboverlay \
+    libqdMetaData \
     libtinyxml \
     vendor.display.config@1.9 \
     vendor.display.config@1.9_vendor
@@ -290,6 +291,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavmediaserviceextensions \
     libmediametrics \
+    libstagefright_enc_common \
     libregistermsext \
     mediametrics
 
