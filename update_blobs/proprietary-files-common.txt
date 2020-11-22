@@ -211,11 +211,11 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8a
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|ef77bab21bad3f992bdf32243cdd2f90f8b8f3ad
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|c740f7d48227ee499ef8edb60c4e177052a108d3
 
-# DPM - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/dpmQmiMgr|ecfa5d218dc45839998a613dbb1db6a99cc83fb7
-vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|ab5d46cbf14ce90ab44aaab4dc1520378c568033
-vendor/lib64/libdpmqmihal.so|24b4b7ece0f0ba468e59d2ddcdaa62733635216b
+# DPM - LA.UM.9.6.2.r1-02500-89xx.0
+vendor/bin/dpmQmiMgr|4fe936478b0da1ee20c6222234b80d478a72cc2a
+vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
+vendor/lib64/libdpmqmihal.so|ffcd85e1f6bf7d54f37953edc2cb2c4a61fc894a
 
 # DRM - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/qseecomd|a673f923a343a98007410022c1dc9acb5d440889
