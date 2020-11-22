@@ -373,9 +373,6 @@ PRODUCT_COPY_FILES += \
 # Power
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
-# Preopt SystemUI
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
@@ -420,12 +417,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    rild \
-    telephony-ext
+    rild
 
 # Sensors
 PRODUCT_PACKAGES += \

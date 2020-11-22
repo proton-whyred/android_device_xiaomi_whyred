@@ -784,48 +784,6 @@
          before setting power profiles on boot. -->
     <bool name="config_waitForMpctlOnBoot">true</bool>
 
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-      <item>"/system/framework/arm64/boot-framework.oat"</item>
-      <item>"/system/framework/framework.jar"</item>
-      <item>"/system/framework/oat/arm64/services.odex"</item>
-      <item>"/system/framework/services.jar"</item>
-      <item>"/apex/com.android.art/javalib/arm64/boot.oat"</item>
-      <item>"/apex/com.android.art/javalib/arm64/boot-core-libart.oat"</item>
-      <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-      <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-      <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-      <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-      <item>"/system_ext/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
-      <item>/system/lib64/libRScpp.so</item>
-      <item>/system/lib64/libRS.so</item>
-      <item>/system/lib64/libRS_internal.so</item>
-      <item>/system/lib64/libbcinfo.so</item>
-      <item>/system/lib64/libRSDriver.so</item>
-      <item>/system/lib64/libRSCpuRef.so</item>
-      <item>/system/lib64/libblas.so</item>
-      <item>"/system/lib64/libsurfaceflinger.so"</item>
-      <item>"/data/dalvik-cache/arm64/system@system_ext@priv-app@SystemUI@SystemUI.apk@classes.dex"</item>
-      <item>"/data/dalvik-cache/arm64/system@system_ext@priv-app@SystemUI@SystemUI.apk@classes.vdex"</item>
-   </string-array>
-
-    <!-- List of files pinned by the Pinner Service with the JIT Zygote boot image -->
-    <string-array translatable="false" name="config_jitzygoteBootImagePinnerServiceFiles">
-      <item>"/system/framework/framework.jar"</item>
-      <item>"/system/framework/services.jar"</item>
-      <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-      <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-      <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-      <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-      <item>"/system/lib64/libsurfaceflinger.so"</item>
-    </string-array>
-
-    <!-- True if camera app should be pinned via Pinner Service -->
-    <bool name="config_pinnerCameraApp">true</bool>
-
-    <!-- Should the pinner service pin the Home application? -->
-    <bool name="config_pinnerHomeApp">true</bool>
-
     <!-- Default value for proximity check on screen wake.
     Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
     <bool name="config_proximityCheckOnWake">true</bool>
@@ -834,10 +792,6 @@
     <!-- Time to give to the proximity sensor before toggling the flashlight with the Power button.
       Set to -1 to disable the proximity sensor check at all-->
     <integer name="config_flashlightProximityTimeout">-1</integer>
-
-    <!-- Whether to artificially interpret all signal strengths as
-         one bar higher than they actually are -->
-    <bool name="config_inflateSignalStrength">false</bool>
 
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
@@ -922,14 +876,6 @@
     <!-- Enable lockscreen rotation by default -->
     <bool name="config_enableLockScreenRotation">false</bool>
 
-    <!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">true</bool>
-
-    <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
-    <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
-
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
@@ -989,11 +935,6 @@
         <item>192.168.51.2</item>
         <item>192.168.51.254</item>
     </string-array>
-
-    <!-- Enables or disables fading edges when marquee is enabled in TextView.
-         Off by default, since the framebuffer readback used to implement the
-         fading edges is prohibitively expensive on most GPUs. -->
-    <bool name="config_ui_enableFadingMarquee">false</bool>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
