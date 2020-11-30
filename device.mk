@@ -454,6 +454,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+# tensorflow
+PRODUCT_PACKAGES += \
+    libtflite
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
