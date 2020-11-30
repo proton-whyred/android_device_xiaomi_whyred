@@ -325,8 +325,16 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
+    DocumentsUIOverlay \
+    FrameworksOverlay \
+    SystemUIOverlay \
+    TelecomOverlay \
+    TelephonyOverlay \
+    SettingsOverlay \
+    WifiOverlay \
+    TetheringConfigOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -494,11 +502,9 @@ PRODUCT_PACKAGES += \
     hostapd \
     libqsap_sdk \
     libwifi-hal-qcom \
-    TetheringConfigOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
-    wpa_cli \
-    WifiOverlay
+    wpa_cli
 
 # WiFi Configs
 PRODUCT_COPY_FILES += \
