@@ -450,6 +450,10 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_PACKAGES += \
     libcutils_shim
 
+# servicetracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
