@@ -29,7 +29,9 @@ $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Audio
 $(call inherit-product, hardware/qcom/audio/configs/sdm660/sdm660.mk)
