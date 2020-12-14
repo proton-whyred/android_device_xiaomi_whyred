@@ -34,6 +34,8 @@ genfscon sysfs /devices/soc/soc:qcom,mincpubw                   u:object_r:sysfs
 genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0                u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/soc/soc:qcom,memlat-cpu4                u:object_r:sysfs_devfreq:s0
 
+genfscon proc /last_kmsg                                                  u:object_r:proc_last_kmsg:s0
+
 # Touchpanel
 genfscon proc /tp_gesture                                      u:object_r:sysfs_tap_to_wake:s0
 
