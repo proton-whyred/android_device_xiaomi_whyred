@@ -264,3 +264,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Swap type
 PRODUCT_PROPERTY_OVERRIDES += \
     swap_type=zram
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.shutdown_timeout=2
