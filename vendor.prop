@@ -161,3 +161,5 @@ ro.vendor.sensors.mot_detect=true
 
 # Time
 persist.vendor.delta_time.enable=true
+
+ro.build.shutdown_timeout=2
