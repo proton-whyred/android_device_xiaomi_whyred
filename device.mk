@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS := \
     android.hidl.manager-V1.0-java
 
+# htop
+PRODUCT_PACKAGES += \
+    htop
+
 # IFAAService
 PRODUCT_PACKAGES += \
     IFAAService \
