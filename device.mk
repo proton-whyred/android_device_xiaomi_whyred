@@ -334,7 +334,8 @@ PRODUCT_PACKAGES += \
     TelephonyOverlay \
     SettingsOverlay \
     WifiOverlay \
-    TetheringConfigOverlay
+    TetheringConfigOverlay \
+    SimpleDeviceConfigOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
