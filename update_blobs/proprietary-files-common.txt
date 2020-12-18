@@ -422,8 +422,8 @@ system_ext/lib/libbeluga.so|476b76af5190f5a88b71e217a54513abd0a0580f
 system_ext/lib64/libbeluga.so|323cadc5067d5b4641286d584aa30ac3a24cedbb
 
 # libdolphin - from ThankYouMario
-system_ext/lib/libdolphin.so|a9a64db8ed523daa8172d47dc73a091d240e8d5a
-system_ext/lib64/libdolphin.so|3ece9bfed83c345c145c5d596cd41f45a03d0197
+system_ext/lib/libdolphin.so|d2c39ae9410cf7126e7a4dd546090add0f5bd50b
+system_ext/lib64/libdolphin.so|5c645e95fe52740433a6bf7b8c94988ec6ef8008
 
 # Listen - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/lib/hw/sound_trigger.primary.sdm660.so|336e4af06f2ddd74bf318bae8ce21388c7f90ac6
@@ -792,7 +792,7 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61
 -system_ext/app/remotesimlockservice/remotesimlockservice.apk|ee57aef8dc460f9597ddf5c08639d4d7388fc514
 -system_ext/app/uceShimService/uceShimService.apk|2044ae20ad99de26ffc898c7fcd31f359ed54760
 -system_ext/app/uimgbaservice/uimgbaservice.apk|d3a642aa212445f98292c9698dc28b0142376a1e
--system_ext/app/uimlpaservice/uimlpaservice.apk|b0b2131613f3f65b2380b5a54a1146dad587b94e
+-system_ext/app/uimlpaservice/uimlpaservice.apk|a2b48d62e865be50b338eaa783d45004ab7f44dd
 -system_ext/app/uimremoteclient/uimremoteclient.apk|2a7124e5757f0e816e0c58c0d9a98f52938967f9
 -system_ext/app/uimremoteserver/uimremoteserver.apk|a63cf853ed244b91c0e41f38ba4a5ad83f735066
 -system_ext/app/xdivert/xdivert.apk|c2b4f8b3cce92e7e095433f27516176333f71e90
@@ -838,7 +838,7 @@ system_ext/etc/spn-conf.xml|ac8a0750445f66091e7e77928fc055ff50369f42
 -system_ext/framework/dpmapi.jar|2e2fbe2257a697b96a644c774136da0554430d3f
 -system_ext/framework/embmslibrary.jar|b5fe26c1cea597af8a1751332d187f2f574816c1
 -system_ext/framework/qcrilhook.jar|ad688364314100318f305ed4ab5defec8766b20a
--system_ext/framework/qti-telephony-common.jar|7d684c5220f5a2a5778bac40f95d852de68dd1a6
+-system_ext/framework/qti-telephony-common.jar|710406e01836b558c802ba4960fa59f31545389e
 -system_ext/framework/remotesimlockmanagerlibrary.jar|964306688a3062d0ec507e471d2f4a1a1911e765
 -system_ext/framework/uimgbalibrary.jar|60a64011ce419cd980aaa58bfe131b79ff616b69
 -system_ext/framework/uimgbamanagerlibrary.jar|881baefa00e98f7d25ed33b7ec69e1f0eb821039
@@ -892,13 +892,13 @@ system_ext/lib/libdpmframework.so|168e2ec57d888575512f3d0f9b78eaf08b607158
 system_ext/lib/libdpmtcm.so|72bde9f369d7ed97578a3d558e7f54bbd5361ba9
 system_ext/lib/libimscamera_jni.so|cb608a18c83a1b87a263bdf06ed7fb7feb968c60
 system_ext/lib/libimsmedia_jni.so|910a70a8b8282d380ddd05a9178a4d0d07765f47
-system_ext/lib/lib-imsvideocodec.so|3d4a54ee8676dfcfdc2aa3265498ed5d4cf8a0f9
-system_ext/lib/lib-imsvtextutils.so|c2ae0afef50670439bca3da6e50bfc81980581c4
-system_ext/lib/lib-imsvt.so|cc66a4910e78be6f97016ce6c53ce90491dc185e
-system_ext/lib/lib-imsvtutils.so|6011e72eb3b33853a9c836ae70aa838f5c244723
+system_ext/lib/lib-imsvideocodec.so|a192a6ce39912f3916f264d5262d3978dea3c90a
+system_ext/lib/lib-imsvtextutils.so|2861aad083942b9a6d385c4f4546535f78fcb520
+system_ext/lib/lib-imsvt.so|0dc23293ff25c1a0e4fa44822c907575da41e48c
+system_ext/lib/lib-imsvtutils.so|5fe3f70de8055efc0e69471822c2bc25ea48d187
 system_ext/lib/libjnihelpers.so|2e4674c8a947d08b8538951e177008fcab7f203f
 system_ext/lib/libmink-sock-native-api.so|2df7b281b3bb282d92c9dfd35d34b2b62e839d01
-system_ext/lib/libminksocket_system.so|3c8ffd1f8389fadb402766b8084a074db0dfd780
+system_ext/lib/libminksocket_system.so|b6acdc3e03f99d42dbbecf9b6de7c5fa67022ba9
 system_ext/lib/libmmrtpdecoder.so|db34a6876b6437bb419e9beedb421f6c1edbef23
 system_ext/lib/libmmrtpencoder.so|5f9d17ea249cf55bc30019f1db2ab317d5c92d32
 system_ext/lib/libqmi_cci_system.so|7e9edd8f95341db247602c32a2c4b495467eaaef
@@ -982,16 +982,16 @@ system_ext/lib64/libembmssqlite.so|5d5bf58fdebe26c30011077ebad1986620019b66
 system_ext/lib64/libembmstinyxml.so|08eee57d42821158a04f37f41f6ab956993e0de9
 system_ext/lib64/libimscamera_jni.so|e1f3415ef21497f5bb551b846e7f92297bdd3156
 system_ext/lib64/libimsmedia_jni.so|ad16488a887c84de26d73e3eb529865b3f6ff4ee
-system_ext/lib64/lib-imsvideocodec.so|0412528a3a5eefca1c70621d525950d89d54f35f
-system_ext/lib64/lib-imsvtextutils.so|7fe2cf5ac5f84c3c61b4458099efcf900801c2e2
-system_ext/lib64/lib-imsvt.so|892710d1d6ff0a54550117a7e72b3ae923748511
-system_ext/lib64/lib-imsvtutils.so|2d9f15c83f0403dc3d3c82d4868796d303d2a4a4
+system_ext/lib64/lib-imsvideocodec.so|0e4d93572eab0f63ab670fff2d02287de53e1c93
+system_ext/lib64/lib-imsvtextutils.so|4b4d4475b5805919c0386c5795a8ae2700b67f49
+system_ext/lib64/lib-imsvt.so|9015d3b5d9b451651bce243f77696ceace55ba94
+system_ext/lib64/lib-imsvtutils.so|4d13ef6bf26297b41c74a1b498c0dea824a84447
 system_ext/lib64/libjnihelpers.so|0dea7078e573608e3f1af250ba588736792d24e3
 system_ext/lib64/libmink-sock-native-api.so|fb78eea7a80f84ef443a1c4901727d202f3b07bc
-system_ext/lib64/libminksocket_system.so|ef9861cb651da5afa994e095e7a5462fd7af95a1
+system_ext/lib64/libminksocket_system.so|4ee468da377141d2b3283b70bdb9402466edc891
 system_ext/lib64/libmmrtpdecoder.so|4af3071ff57297051bf55ed0f04013f0c53289e6
 system_ext/lib64/libmmrtpencoder.so|65cb0c94b6f97478f13264098641633acffc7416
-system_ext/lib64/libmsp.so|2db99765198b073e500c947de7411d8e3d68362f
+system_ext/lib64/libmsp.so|bdccdcfd584a29c38f6389a617616804d9347de1
 system_ext/lib64/libqmi_cci_system.so|dcfe37b5044774da127aece1d9f8ed8fa9da3864
 system_ext/lib64/libqmi_encdec_system.so|6f43dabfad6345c1d911fb78542fb80471a98d99
 system_ext/lib64/libslmiptablemgr.so|0aded87ee0ddd7a2d0bd232c6e2385192d940970
@@ -1054,9 +1054,9 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so|bb94be53fe9f52ed4b69dc42493ac6c
 system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so|94ee2757393b29787ff96a8694c95a7d7d8d7319
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|393c5affc1e8e36470705ec44396d1ffa603a541
 system_ext/lib64/vendor.qti.latency@2.0.so|d388f7b44e439f19562065aa2935fae7318a22fb
--system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk|cf980882bd345837edb6ca36e15dce0b1f55c8c4
+-system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk|55d502583fc6c4c7b4c99b32154f6ff3a2b21bdd
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|9929a3303b7402234d63e89eb6dd204ee1303d88
--system_ext/priv-app/ims/ims.apk|61507a8ad66f4f299fe66e11ff71eeb3e2fe5259
+-system_ext/priv-app/ims/ims.apk|29ba29b833e448f49cfa10a11617c41d2fd31fb0
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|344ad9179560cc83b208f62fb009fdc2799609fd
 -system/framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 
@@ -1064,10 +1064,12 @@ system_ext/lib64/vendor.qti.latency@2.0.so|d388f7b44e439f19562065aa2935fae7318a2
 system_ext/bin/diag_callback_sample_system|562d6a37d9310b617ca4b0153060aa6238da303b
 system_ext/bin/diag_dci_sample_system|b0abdbc7d4ddb7296cdd3356398d47ed77a7d97d
 system_ext/bin/test_diag_system|0113b58600367401cadc1628121d801c3b1d8607
-system_ext/lib/libdiag_system.so|150f4d7d2489ce13867f9835e02d599d28dcb9e2
-system_ext/lib/vendor.qti.diaghal@1.0.so|b1ecc07366aa8690c51bdc77b8001cbcec8a96a9
-system_ext/lib64/libdiag_system.so|d98a0e46e466acf5dc3efa73c1d0f17ff9262ed8
-system_ext/lib64/vendor.qti.diaghal@1.0.so|d8710234e3a959f14f93cd4069b0fef8a18a5683
+system_ext/lib/libdiag_system.so|7638e0eebd73f33b3a4a19ba9e315058fec65814
+system_ext/lib/libdiag_system.qti.so|eeca1cf2872c93692f571aabfe15868b2f9e4b01
+system_ext/lib/vendor.qti.diaghal@1.0.so|7289c0165df0140036cb0a6794fc27d039b85ab5
+system_ext/lib64/libdiag_system.so|9b7132014cb53a47ecbd9ff5d9729791dec0cf5c
+system_ext/lib64/libdiag_system.qti.so|aec0048ea234e1b11a8bd86846a3c3a70cc6fa12
+system_ext/lib64/vendor.qti.diaghal@1.0.so|4ef9d68a995e89452479e9ba30218f0b2fd3d57f
 
 # Thermal - from wayne Miui 9.7.4
 vendor/bin/thermal-engine|0be3686204fc600f8dd8607fff10cd7fd273186e
