@@ -543,15 +543,15 @@ vendor/bin/pm-service|d41dabf5e4830f93b267d668d37e72aedae48163
 vendor/lib/libperipheral_client.so|6a95436d0d649fff0a48a4662a0781330e723ae1
 vendor/lib64/libperipheral_client.so|18796ea27c31bd39946f23f2b4173bafd26d9216
 
-# Postprocessing - from LA.UM.8.2.r1-06700-sdm660.0
+# Postprocessing - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/hw/vendor.display.color@1.0-service|e8c561e3a169c3007b117515f2946f23a195a5e5
-vendor/bin/mm-pp-dpps|27ed9e9a5f6c4f547c15e396053f283211f65abb
+vendor/bin/mm-pp-dpps|f0eed6f8c36c3b966d953349edaf82c6a70cf791
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib64/libdisp-aba.so|edf0d57d523b5d578263a19358e1f57f8c7bbfd1
-vendor/lib64/vendor.display.color@1.0.so|c7eb0d87e45934ad7ff34d0c977116ed46091865
-vendor/lib64/vendor.display.color@1.1.so|d2dfc3fff6aaf7989110ebe05af154186e535010
-vendor/lib64/vendor.display.color@1.2.so|7b967425caa1205e331484e1e1484ac3bd355067
-vendor/lib64/vendor.display.postproc@1.0.so|c9c96ff50b6ff8989fac9fdf35d282a996ea477a
+vendor/lib64/vendor.display.color@1.0.so|cd604706cd50989b899c04a252f7f02d17996ba9
+vendor/lib64/vendor.display.color@1.1.so|c66b3b0ab5c084719e706ced0ea65cce037de64c
+vendor/lib64/vendor.display.color@1.2.so|292cee21df80453bdf6366718a0104a4a48f6352
+vendor/lib64/vendor.display.postproc@1.0.so|cc62ff1b3e8ff0e11b750ae59a0f851fdab50962
 
 # QMI - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/irsc_util|6dfe682b6e12be1cb26c0b497681c3e55441b4c5
