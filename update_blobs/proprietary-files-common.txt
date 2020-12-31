@@ -434,7 +434,7 @@ vendor/lib/libgcs-osal.so|5f0c6798dbeb9c806706b0cf217440662452364c
 vendor/lib/libgcs.so|ccb6ac9c27021cf4f2ec09994742c38b700c2583
 vendor/lib/libsmwrapper.so|7f7bd7045ced84928ec46b457ec5f21d5228ea3a
 
-# Media - from LA.UM.8.2.r1-06700-sdm660.0
+# Media - from LA.UM.8.2.r1-07400-sdm660.0
 -vendor/lib/libgpustats.so|86d0490b5ccdbeeba64c4f06a9f1503d01eaeabc
 -vendor/lib64/libgpustats.so|dd2ecc6c5ef439a8d427a52ab9d153f8e747deff
 vendor/lib/libAlacSwDec.so|d082d6eeedd8a84bd1b720d515ede48e74392dd4
@@ -452,7 +452,7 @@ vendor/lib/libOmxDsdDec.so|1793f853c171f2317187df2cebefe07d17417c3d
 vendor/lib/libOmxEvrcDec.so|0f67c5690e4b761a8ddade3c3e35b24e37682463
 vendor/lib/libOmxG711Dec.so|de0d8b8aae70de89c351ab8b706592abfe9847d0
 vendor/lib/libOmxQcelp13Dec.so|7b68992a36e0c6e0bdc288359bdb8f950cec34ef
-vendor/lib/libOmxVideoDSMode.so|4f79da4dd209c27c94c9a0e196ba73cfac85a13d
+vendor/lib/libOmxVideoDSMode.so|aed737d08a40d1cde828fde2925b69949c69640e
 vendor/lib/libOmxWmaDec.so|e1f2c2ed81495296f7c0146be5bf0e2530e44317
 vendor/lib/libmm-color-convertor.so|650a2ac25ff610a9472d145d82ffbf7fb00bd17b
 vendor/lib/libvqzip.so|224d6ed62e52b470d9821b99e59c0857609870a5
