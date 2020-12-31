@@ -232,10 +232,10 @@ vendor/lib64/libsecureui.so|65f24fb26da7f0bfd507c04e9efb278a4cdd8c20
 vendor/lib64/libsecureui_svcsock.so|e364290497862270cd01d9be84f0141ea92e92f9
 vendor/lib64/libssd.so|d6758bd01b360be7bb68f35f56978a5e9a21d3c3
 
-# Keymaster - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/lib64/libkeymasterdeviceutils.so|b5d4819abb7dbd7908dfe7c6cfa5035e02b10383
-vendor/lib64/libkeymasterprovision.so|31cd2038ea1461263a552af49b5b67fba57d1a29
-vendor/lib64/libkeymasterutils.so|a81bdd48359cc8ac4458d4addab1ef2104fbd385
+# Keymaster - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
+vendor/lib64/libkeymasterprovision.so|25505bda86672a5ae31f75b8f8af0a3560ef648f
+vendor/lib64/libkeymasterutils.so|2791994395cd10eb1092b8bd8fea15987e17421d
 
 # DRM (HDCP) - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/lib/libmm-hdcpmgr.so|1369ce85b3c133c8d4d04167cd894df85212dcfa
