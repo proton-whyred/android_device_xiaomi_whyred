@@ -41,15 +41,15 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 
-# CDSP - from LA.UM.8.2.r1-06700-sdm660.0
-lib/libcdsprpc_system.so|111797b70a5274be1af0b343ef54966478bfcd39
-lib64/libcdsprpc_system.so|81db24d014a39b109a8b65b770b24344d0dfe9d2
+# CDSP - from LA.UM.8.2.r1-07400-sdm660.0
+lib/libcdsprpc_system.so|dc9b4ea1f14e41be5f33f37c7057891adb2e2649
+lib64/libcdsprpc_system.so|ad850e13c77b0c07c62d28f7f053cd4549af7cf7
 vendor/bin/cdsprpcd|6fb2700151a6e6dd57a5d9a388cf3a95d3e8262b
 vendor/lib/libcdsp_default_listener.so|a65a21fb52a98fc769957294fbdc2e22dcd3046f
-vendor/lib/libcdsprpc.so|5923636bf782c56de6778f77cf570fb0ccafdc5d
+vendor/lib/libcdsprpc.so|66095258dde81154d336e516e8dd5a354b7c9f57
 vendor/lib/libsysmon_cdsp_skel.so|9c088c263500259484a3b7c611efd413464b4d34
 vendor/lib64/libcdsp_default_listener.so|33260b098ddde2d0e6cf44b11f12e4c16264fda5
-vendor/lib64/libcdsprpc.so|d04c40305c6ce6c6cf932a543a18508b2247ece8
+vendor/lib64/libcdsprpc.so|9b269bfe9d91fc6359745482b2cb42625248c34c
 vendor/lib64/libsysmon_cdsp_skel.so|40d3511922c744016c419983b18f97952c23fee5
 
 # Audio - from LA.UM.8.2.r1-06700-sdm660.0
