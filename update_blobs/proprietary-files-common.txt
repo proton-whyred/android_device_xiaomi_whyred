@@ -89,16 +89,16 @@ product/lib64/com.qualcomm.qti.ant@1.0.so|1a7bee1627309c8eee55dab22b9f25c2302219
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|5ef111c6ecb35b94233ae694d80161e9f61b7cd6
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7ecb1de206
 
-# Audio FX modules - from LA.UM.8.2.r1-06700-sdm660.0
+# Audio FX modules - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
 vendor/lib/soundfx/libasphere.so|eaa35262337a8401aaecf02997e98e24083f064c
-vendor/lib/soundfx/libqcbassboost.so|21670836de855a24f1b2424a9c4ad7c6cac3afa0
-vendor/lib/soundfx/libqcreverb.so|3a93eecfdec56b2754a6256a75578ed26f5c61ba
-vendor/lib/soundfx/libqcvirt.so|fd081ae5705152d75d577034f8ac1920b0bb9ca7
+vendor/lib/soundfx/libqcbassboost.so|bbcfdd572b1dff24101bbf9176af379b10163da8
+vendor/lib/soundfx/libqcreverb.so|c1bd1bc5c69ba3d2d04a21f31b94fc5fc97dcc13
+vendor/lib/soundfx/libqcvirt.so|440e015eebdac2fae830e7bb318d5c80d1a13cdb
 vendor/lib64/soundfx/libasphere.so|27154ce2eed6902f36ed8c85324cf61c96c8af02
-vendor/lib64/soundfx/libqcbassboost.so|d729c008d1b8925d60078b2733010708bdfed2c4
-vendor/lib64/soundfx/libqcreverb.so|1dba604109a6f1c41285aa70b88274d5fddbb656
-vendor/lib64/soundfx/libqcvirt.so|7b11552f1100a6b6146865ceba853d331946b913
+vendor/lib64/soundfx/libqcbassboost.so|3e058d2e97617f9b91cfbd866671944526fae057
+vendor/lib64/soundfx/libqcreverb.so|10688b66f0cac17cd4e17550b1e744b0e8f10fb8
+vendor/lib64/soundfx/libqcvirt.so|fb2677be6f3f434f5569dfca3a7c6934c881c4e4
 
 # Bluetooth (aptX) - from jasmine-user-10-QKQ1.190910.002-V11.0.4.0.QDIMIXM
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
