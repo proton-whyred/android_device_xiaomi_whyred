@@ -285,11 +285,11 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|299b889186af05d99f1c8a2e2828c427484e175
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|942c4a88be55eb62fab614a08b64676972de2d89
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|9eb88f44f2231ca4f39bee678e3f71de8ef6ebb4
 
-# GPS - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/loc_launcher|9623f5f96bd262abc5c883610feca43a5ab214b3
-vendor/bin/lowi-server|96eaea12128d352048a0a50f93162cc2f31ee12d
-vendor/bin/slim_daemon|82b35146a3d8b1322d4c7107991f24134160c25c
-vendor/bin/xtra-daemon|a3b63345bcff2c0be89904a3ad06d7bc72f210f1
+# GPS - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/loc_launcher|72130c59ca686ebfb588c4b724adb5572a5a33d2
+vendor/bin/lowi-server|9da7b8da6a9ab3c48a9d11d0b1f302938ea6b185
+vendor/bin/slim_daemon|a5ba577ac1cde4f3d3e3d1d4c4ad0b7e8908873f
+vendor/bin/xtra-daemon|f596e41b47179dbbb7d423c25b15afbb8a153541
 vendor/etc/apdr.conf|b43b3d32d442436945c36fddcf2259021d98c324
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/izat.conf|5ffb094261e68246149dac5c6f564e0c3d783ad9
@@ -297,28 +297,28 @@ vendor/etc/lowi.conf|1e47a73803542661b9a4c42cc8dfa576ae03a9a2
 vendor/etc/sap.conf|afbcbacb367b2fcc05efcad76ef096d794e768ba
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
-vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|943fbdcf7f58907ab23628cda9d26168372ac8e4
+vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|7e89f3bc23cf3694d5cc214142018ab0c3558407
 vendor/lib64/libcacertclient.so|e04aa49d3b3b4534f5eb2b1ccea69ff8fee0182c
 vendor/lib64/libdataitems.so|780958151b4a6bf31b2848dfe37664889c82f214
-vendor/lib64/libgdtap.so|b3135dcc4c290cb61b8a959b1fb6ce0897539905
+vendor/lib64/libgdtap.so|6a92805410e99b1341c8197c43c16d0d8caf3ec5
 vendor/lib64/libizat_client_api.so|2343abbe03743adb24a79762feb89a2174b9b838
-vendor/lib64/libizat_core.so|b2b3ae5e2feb4426fdb268b0faff3255f6102986
-vendor/lib64/liblbs_core.so|bda09802c11ddf5b5a171f4c3c6331ac57c04311
-vendor/lib64/libloc_api_v02.so|2a9fa39bd5df5fc7db31602f730288bad72e0820
-vendor/lib64/liblocationservice.so|91d7f1b52bbc3941630fb2392f1726e5bfbef8c4
+vendor/lib64/libizat_core.so|28ecc1f0bd593fcc578d9597e30b21d279ad6fce
+vendor/lib64/liblbs_core.so|93f79bb4daa1c9dba0e10fa5af6953eaa19aa043
+vendor/lib64/libloc_api_v02.so|9cfc7139f85f9e93f70f45c6806fd9b2494fce46
+vendor/lib64/liblocationservice.so|3b3d4a61efe9ea82d27a0747d5b42698194f450a
 vendor/lib64/liblocationservice_glue.so|6341ec7f5ed873c310e814c685d6bec74b7bce02
 vendor/lib64/liblowi_client.so|e32c1c0d6ca9e25b4ff8ad876021947acdc2b88a
 vendor/lib64/liblowi_wifihal.so|295f236ad9300f3f2768cb9ce7debce291cb2176
 vendor/lib64/libqdma_file_agent.so|80c6afee744cb147f30a2b971fff1638a7c0c4e2
-vendor/lib64/libslimclient.so|67fe40d0e3f3e5cea2ba089deb1654a48d40b4c0
-vendor/lib64/libxtadapter.so|e19d870575cc226e61a4ad9c86660e472b6ca52c
-vendor/lib64/vendor.qti.gnss@1.0.so|1cce445261939c7a1eace33742e16c09dffe5c0e
-vendor/lib64/vendor.qti.gnss@1.1.so|e9371f32bd2c463e8a9b0197263a96f8f7cc50bb
-vendor/lib64/vendor.qti.gnss@1.2.so|6a2d413eebe1189c361b1c18215c6d90783a65b2
-vendor/lib64/vendor.qti.gnss@2.0.so|2c81cc50f3996553d26d608ca55a273e1d8e75cc
-vendor/lib64/vendor.qti.gnss@2.1.so|0a58c7da5a628e563228587652763dff18c6e3da
+vendor/lib64/libslimclient.so|ec1c767dac9d1a55af442a3f2c73b3faf684bf01
+vendor/lib64/libxtadapter.so|d1df4fc590610dd455405c4e43a266e6dda4e2f2
+vendor/lib64/vendor.qti.gnss@1.0.so|cab0039ed66d87772a5ba6617c39c5ccd0e3f1b2
+vendor/lib64/vendor.qti.gnss@1.1.so|f42d12f0787564b0b80f505d36429004714ef893
+vendor/lib64/vendor.qti.gnss@1.2.so|28d3dadb2b02fd99829062caece8e56c113027d9
+vendor/lib64/vendor.qti.gnss@2.0.so|d567ea796a3f8758365ce5fd2a7294db1a7e1544
+vendor/lib64/vendor.qti.gnss@2.1.so|96c599aeef751258262a5480e69d78a3476062a8
 vendor/lib64/vendor.qti.gnss@3.0-service.so|e799172a7113a35b1f17a8c5999713286c104d11
-vendor/lib64/vendor.qti.gnss@3.0.so|168e121b29c34b8940438caad9fd52423a1ceba8
+vendor/lib64/vendor.qti.gnss@3.0.so|07ae1f9907a85d9adfb99be04b8c4d1497dbece0
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|b6ff1fa5d685ff3572993cbe8325c36654eea4d8
 
 # GPU firmware - from jasmine-user-10-QKQ1.190910.002-V11.0.4.0.QDIMIXM
