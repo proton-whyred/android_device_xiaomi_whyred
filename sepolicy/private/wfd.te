@@ -1,0 +1,2 @@
+get_prop(vendor_wfdservice, vendor_wfd_sys_debug_prop)
+set_prop(vendor_wfd_app, vendor_wfd_service_prop)

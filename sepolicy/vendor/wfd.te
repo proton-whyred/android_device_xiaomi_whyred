@@ -1,0 +1,26 @@
+binder_call(vendor_wfdservice, system_app)
+allow vendor_wfdservice sysfs_graphics:dir search;
+allow vendor_wfdservice sysfs_graphics:file { read open getattr };
+allow vendor_wfdservice proc_asound:dir search;
+allow vendor_wfdservice proc_asound:file { read open getattr };
+
+allow vendor_wfdservice {
+video_device
+audio_device
+uhid_device
+}:chr_file { read write open getattr ioctl };
+
+allow vendor_wfdservice audio_device:dir search;
+allow vendor_wfdservice proc_net:file { read open getattr };
+
+get_prop(vendor_wfdservice, vendor_video_prop)
+
+allow vendor_wfdservice self:netlink_generic_socket { read getattr setopt create bind write };
+allow vendor_wfdservice self:udp_socket ioctl;
+
+allow vendor_wfdservice input_device:dir { read open getattr search };
+allow vendor_wfdservice input_device:chr_file { read open getattr ioctl };
+
+allow vendor_wfdservice self:capability net_admin;
+
+allow vendor_wfdservice media_rw_data_file:dir search;

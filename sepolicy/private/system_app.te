@@ -1,1 +1,3 @@
 hal_client_domain(system_app, hal_mlipay)
+set_prop(system_app, vendor_wfd_service_prop)
+get_prop(system_app, vendor_wfd_sys_debug_prop)
