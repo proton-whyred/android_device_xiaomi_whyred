@@ -446,10 +446,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything 
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
-# Shims
-PRODUCT_PACKAGES += \
-    libcutils_shim
-
 # servicetracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
