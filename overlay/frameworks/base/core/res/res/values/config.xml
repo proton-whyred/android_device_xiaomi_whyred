@@ -324,6 +324,9 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+    <!-- True if the device supports Sustained Performance Mode-->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
          app standby.  These are not enabled by default because they require a standard
          cloud-to-device messaging service for apps to interact correctly with the modes
