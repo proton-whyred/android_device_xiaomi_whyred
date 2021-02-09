@@ -395,6 +395,9 @@ PRODUCT_COPY_FILES += \
 # Power
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.1.vendor
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \

@@ -546,15 +546,11 @@ vendor/lib/libperfgluelayer.so|6ab754c780858b668f8b45c7d222a0bf3d9ecda3
 vendor/lib/libqti-perfd-client.so|93b4806dd64f7b9a832d2b1999f6fa6413c56a48
 vendor/lib/libqti-perfd.so|75035d4036104328fb3f6a74dfef01e893cb8291
 vendor/lib/libqti-util.so|b9610a3448b53d007965e1572a0d6c65414052ff
-vendor/lib/vendor.qti.hardware.perf@2.0.so|9b4983ba1941496f4ba06b646a0397d635ca8f32
-vendor/lib/vendor.qti.hardware.perf@2.1.so|80557dc1b6841be7d24b1ceeafa9b512390205b6
 vendor/lib64/libperfconfig.so|45d5344603d76d4d0b7f27bdd4ea07ac525656de
 vendor/lib64/libperfgluelayer.so|152cf86d26137536b7c20ca99d7efec5d1375324
 vendor/lib64/libqti-perfd-client.so|7089fa216b06fc78127b51df6cade6518886a463
 vendor/lib64/libqti-perfd.so|6c041cd7f3d640b500fb2253ba93a253e12ffd31
 vendor/lib64/libqti-util.so|45a80be449435d277f09cc59e4a315fa86072c41
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|b05e762bf5c7e86b0d6c1be4c8ae91e3f706dca7
-vendor/lib64/vendor.qti.hardware.perf@2.1.so|1020f58f1a5b3bb82e2935b599aa51ce7a9efda9
 
 # Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
