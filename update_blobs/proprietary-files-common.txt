@@ -518,28 +518,6 @@ vendor/lib64/libOmxQcelp13Dec.so|d8bb8a5c999a2f2e3a7e717d422ab43c90ab9028
 vendor/lib64/libOmxWmaDec.so|8f8ef46403b739859f97f1fe54dff8c30b57cebb
 vendor/lib64/libmm-color-convertor.so|6cd70ba35581b6e16b1a48d0139a6e2c5d6e35fa
 
-# OMX - from prebuilt AOSPA quartz
-vendor/lib/libOmxAacEnc.so|361a93cd27b774b20df9cf727e4939a3d20c6afb
-vendor/lib/libOmxAmrEnc.so|75e367deb14725f011848e631332becf07d9e70f
-vendor/lib/libOmxCore.so|676b0b6af41509051cfcacc529779fd1cc6899a0
-vendor/lib/libOmxEvrcEnc.so|32523dcb43bdb3473e20c4489cbd5d47417f36db
-vendor/lib/libOmxG711Enc.so|c4f57d721153c464a6494f45e946e17c1b5da77f
-vendor/lib/libOmxQcelp13Enc.so|b2b9058fc76b7f11933b6f74dd20559631d133cd
-vendor/lib/libOmxVdec.so|968af794508d6335b113b90a8ddb18512be14dfa
-vendor/lib/libOmxVenc.so|910ca8cd5d7f39ada31b2b0f2cd71ddeed249870
-vendor/lib/libmm-omxcore.so|3370ff68b937a508b0daa6fa5ffdc8f4006673a1
-vendor/lib/libstagefrighthw.so|8b1b60c70efa8ed3d154dacf8994a96040f8359c
-vendor/lib64/libOmxAacEnc.so|2dd356fd25bb030c0a82e29b02f19d3e7bfbe0c3
-vendor/lib64/libOmxAmrEnc.so|8b586c747a621b981c9669c1ba2d71d8e41a6a42
-vendor/lib64/libOmxCore.so|86cc29f99010484fed2dfcd39b0b31a77951ebfd
-vendor/lib64/libOmxEvrcEnc.so|d29bd5e3464804887f24f4568ba9a921c83d36f3
-vendor/lib64/libOmxG711Enc.so|1ed1ab3d39da29ba3208efc3cbe9e7e34c395d60
-vendor/lib64/libOmxQcelp13Enc.so|e6974e01adbe8c587ee4ac2d386e1435eaf65686
-vendor/lib64/libOmxVdec.so|9df5389fc3d3dc3a80dcbc95bc16efe45d78f496
-vendor/lib64/libOmxVenc.so|2e411b42530e28f65c624dded09894388f571d6e
-vendor/lib64/libmm-omxcore.so|19fbc696ed300c7e185214262408d1ff24ab2d3f
-vendor/lib64/libstagefrighthw.so|30575931f3ce9e24226c1c355fe5b2298b86b9ea
-
 # Mlipay - from wayne V9.7.4
 vendor/bin/mlipayd@1.1|13e9167024fd2dc49a56ed27e583057408dcc1eb
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
