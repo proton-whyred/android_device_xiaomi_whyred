@@ -480,10 +480,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# Thermal
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
