@@ -326,7 +326,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr
+    android.hardware.power-service.xiaomi_sdm660-libperfmgr
 
 # Hint
 PRODUCT_COPY_FILES += \
