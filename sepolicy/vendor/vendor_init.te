@@ -15,6 +15,8 @@ allow vendor_init media_rw_data_file:file { read open getattr };
 allow init adsprpcd_file:file mounton;
 allow init proc:file setattr;
 
+allow vendor_init device:file write;
+
 set_prop(vendor_init, vendor_freq_prop)
 set_prop(vendor_init, camera_prop)
 set_prop(vendor_init, vendor_power_prop)
