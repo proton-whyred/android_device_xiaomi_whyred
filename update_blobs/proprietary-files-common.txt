@@ -755,13 +755,6 @@ vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
 vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
 vendor/lib64/sensors.ssc.so|b53f9d8a5580feb9ca8f9e4efd080f76dc1d1588
 
-# servicetracker - from ThankYouMario
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|e78e2acd5c7815e59f4506ecb79523a276c4df6f
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
-vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|8048736230e1915347787f6d2b7f731be9b1fa16
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|369a371ef3c35270c16becfcef0cc01f37ff4034
-
 # Soter - from LA.UM.8.2.r1-06200-sdm660.0
 -app/SoterService/SoterService.apk|482523fabe02255e7ab6f80fbaaabe32c8fb3be9
 

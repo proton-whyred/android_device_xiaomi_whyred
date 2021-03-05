@@ -459,10 +459,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything 
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
-# servicetracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor
-
 # tensorflow
 PRODUCT_PACKAGES += \
     libtflite
