@@ -80,7 +80,6 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti \
     android.hardware.bluetooth.audio@2.0-impl \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     liba2dpoffload \
@@ -160,25 +159,11 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
-# Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
-
-#FM
-#PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio \
-    qcom.fmradio.xml
-
-#PRODUCT_BOOT_JARS += \
-    qcom.fmradio
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -217,10 +202,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS := \
     android.hidl.manager-V1.0-java
-
-# htop
-PRODUCT_PACKAGES += \
-    htop
 
 # IFAAService
 PRODUCT_PACKAGES += \
@@ -346,8 +327,7 @@ PRODUCT_PACKAGES += \
     TelephonyOverlay \
     SettingsOverlay \
     WifiOverlay \
-    TetheringConfigOverlay \
-    SimpleDeviceConfigOverlay
+    TetheringConfigOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -451,10 +431,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
-# SimpleDeviceConfig
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything 
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
@@ -470,10 +446,6 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
-
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
 
 # USB
 PRODUCT_PACKAGES += \
@@ -491,10 +463,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
-
-# Wallet
-PRODUCT_PACKAGES += \
-    QuickAccessWallet
 
 # Watermark
 PRODUCT_COPY_FILES += \
