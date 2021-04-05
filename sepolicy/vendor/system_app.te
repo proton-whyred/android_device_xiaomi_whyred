@@ -3,3 +3,5 @@ allow system_app sysfs_zram:dir r_dir_perms;
 binder_call(system_app, vendor_wfdservice)
 
 allow system_app proc_vmallocinfo:file r_file_perms;
+
+diag_use(system_app)
