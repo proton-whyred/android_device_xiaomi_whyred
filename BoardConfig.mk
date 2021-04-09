@@ -118,7 +118,7 @@ BOARD_HAVE_QCOM_FM := true
 BOARD_HAVE_FM_RADIO := true
 
 # GPS
--include hardware/qcom/gps/gps_vendor_board.mk
+include hardware/qcom/gps/gps_vendor_board.mk
 LOC_HIDL_VERSION := 3.0
 
 # HWUI
@@ -254,5 +254,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/whyred/BoardConfigVendor.mk
--include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
+include vendor/xiaomi/whyred/BoardConfigVendor.mk
+include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
