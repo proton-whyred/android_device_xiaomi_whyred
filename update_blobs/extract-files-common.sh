@@ -65,6 +65,10 @@ function blob_fixup() {
         patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
         ;;
 
+    lib/libwfdmmsink.so)
+        patchelf --add-needed "libshim_wfdmmsink.so" "${2}"
+        ;;
+
     vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so)
         patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
         sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
