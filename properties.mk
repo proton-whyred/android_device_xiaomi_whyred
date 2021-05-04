@@ -9,8 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
     dalvik.vm.image-dex2oat-threads=8 \
     ro.sys.fw.dex2oat_thread_count=8 \
-    ro.vendor.qti.am.reschedule_service=true \
-    dalvik.vm.heapgrowthlimit=256m
+    ro.vendor.qti.am.reschedule_service=true
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -266,3 +265,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.shutdown_timeout=2
+
+# dalvik props
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=512k \
+    dalvik.vm.heapmaxfree=8m
