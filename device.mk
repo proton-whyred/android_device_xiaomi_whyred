@@ -111,6 +111,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     libcamera_sdm660_shim
 
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \

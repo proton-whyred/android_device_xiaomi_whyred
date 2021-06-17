@@ -34,9 +34,6 @@ WITH_GMS := false
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
 PRODUCT_BRAND := xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := xiaomi
