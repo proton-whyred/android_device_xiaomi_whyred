@@ -21,4 +21,7 @@
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
 
+    <!-- Whether or not homepage should display user's account avatar -->
+    <bool name="config_show_avatar_in_homepage">true</bool>
+
 </resources>
