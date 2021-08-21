@@ -277,13 +277,13 @@ service vendor.ppd /system/vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
     disabled
 
-on property:init.svc.vendor.hwcomposer-2-2=stopped
+on property:init.svc.vendor.hwcomposer-2-1=stopped
     stop vendor.ppd
 
-on property:init.svc.vendor.hwcomposer-2-2=running
+on property:init.svc.vendor.hwcomposer-2-1=running
     start vendor.ppd
 
-on property:init.svc.vendor.hwcomposer-2-2=restarting
+on property:init.svc.vendor.hwcomposer-2-1=restarting
     stop vendor.ppd
 
 on charger
