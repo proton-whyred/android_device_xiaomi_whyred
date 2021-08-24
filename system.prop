@@ -13,3 +13,6 @@ DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
+
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=0
