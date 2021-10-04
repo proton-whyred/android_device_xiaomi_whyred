@@ -138,8 +138,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Minimal Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
-# Treble
-PRODUCT_FULL_TREBLE_OVERRIDE := true
+# VNDK
 BOARD_VNDK_VERSION := current
 
 # Wifi
