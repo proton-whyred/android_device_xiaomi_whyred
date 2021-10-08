@@ -137,7 +137,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 # Minimal Sepolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 
 # VNDK
 BOARD_VNDK_VERSION := current
