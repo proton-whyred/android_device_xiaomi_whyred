@@ -16,3 +16,5 @@ telephony.lteOnCdmaDevice=1
 
 # Disable blur on app launch
 ro.launcher.blur.appLaunch=0
+
+ro.surface_flinger.supports_background_blur=0
