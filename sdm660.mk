@@ -12,7 +12,12 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/data-ipa-cfg-mgr \
+    hardware/qcom-caf/msm8998/audio \
+    hardware/qcom-caf/msm8998/display \
+    hardware/qcom-caf/msm8998/media \
+    hardware/qcom-caf/common
 
 # Permissions
 PRODUCT_COPY_FILES += \
