@@ -31,6 +31,8 @@ on boot
     # Camera
     chmod 0660 /sys/android_camera/sensor
     chown system system /sys/android_camera/sensor
+    chmod 0664 /proc/tp_gesture
+    chown system system /proc/tp_gesture
 
     # Fingerprint
     chmod 0600 /data/misc/fpc/calibration_image.pndat
