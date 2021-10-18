@@ -18,3 +18,5 @@ telephony.lteOnCdmaDevice=1
 ro.launcher.blur.appLaunch=0
 
 ro.surface_flinger.supports_background_blur=0
+
+persist.sys.binary_xml=false
