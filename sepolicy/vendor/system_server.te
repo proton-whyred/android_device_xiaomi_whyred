@@ -1,0 +1,2 @@
+allow system_server unlabeled:file write;
+allow system_server app_zygote:process getpgid;
