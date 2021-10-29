@@ -346,11 +346,7 @@ function configure_zram_parameters() {
 
     let RamSizeGB="( $MemTotal / 1048576 ) + 1"
     diskSizeUnit=M
-    if [ $RamSizeGB -le 2 ]; then
-        let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
-    else
-        let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
-    fi
+    let zRamSizeMB=1024
 
     # use MB avoid 32 bit overflow
     if [ $zRamSizeMB -gt 4096 ]; then
