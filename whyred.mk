@@ -22,4 +22,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := whyred
 
-PRODUCT_OVERRIDE_FINGERPRINT := google/redfin/redfin:12/SP1A.210812.015/7679548:user/release-keys
+PRODUCT_OVERRIDE_FINGERPRINT := google/redfin/redfin:12/SQ1A.211205.008/7888514:user/release-keys
